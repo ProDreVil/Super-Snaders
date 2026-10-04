@@ -1,0 +1,18 @@
+[PRIMARY]
+Cash <100> (Currency used to buy items from the Shop)
+Health <100> (Your life, reaching 0 or less means death)
+Mana <100> (Resource consumed and required when using a Die or Cards)
+Power <100> (Overpowers snake and deals damage to Players on the same tile)
+
+[SECONDARY]
+Economy <10> (Produces Cash every round)
+Health Regeneration <0> (Rejuvenates Health every round)
+Hoppies <0> (Bonus value to your total Dice Value)
+Luck <0> (Manipulates the odds to favor you more often)
+Mana Regeneration <100> (Replenishes Mana every round, excess Mana gained is converted into Cash)
+Rerolls <1> (Amount of rerolls that can be performed)
+Resistance <0> (Reduces damage received by a percentage)
+
+[TERTIARY]
+Integrity <0> (How long each Quirk lasts, gained every turn and Quirk activation, reaching 100 destroys it)
+Omnistat <0> (???)
