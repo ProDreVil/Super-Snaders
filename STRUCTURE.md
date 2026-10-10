@@ -27,21 +27,19 @@
                 ├── stats.txt
             ├── TUTORIAL.md
         └── 📁game
-            └── 📁__pycache__
-                ├── actions.cpython-314.pyc
-                ├── assignments.cpython-314.pyc
-                ├── board.cpython-314.pyc
-                ├── progression.cpython-314.pyc
             ├── actions.py
             ├── assignments.py
             ├── board.py
             ├── log.py
+            ├── logic.py
             ├── progression.py
+            ├── selection.py
         └── 📁gui
             ├── gui.py
         └── 📁mechanics
             └── 📁boosts
                 ├── boosts.py
+                ├── instant-boost.py
                 ├── stat-boosts.py
                 ├── temporary-boosts.py
             └── 📁cards
@@ -50,16 +48,15 @@
                 ├── gamble-cards.py
                 ├── movement-cards.py
                 ├── preparation-cards.py
-                ├── saborage-cards.py
+                ├── sabotage-cards.py
                 ├── stat-cards.py
             └── 📁dice
                 ├── common-dice.py
                 ├── dice.py
                 ├── epic-dice.py
                 ├── legendary-dice.py
-                ├── move.py
+                ├── rare-dice.py
                 ├── mythical-dice.py
-                ├── uncommon-dice.py
             └── 📁effects
                 ├── effects.py
                 ├── negative-effects.py
@@ -89,7 +86,7 @@
             └── 📁snakes
                 ├── snakes.py
             └── 📁stats
-                ├── main-stats.py
+                ├── primary-stats.py
                 ├── secondary-stats.py
                 ├── stats.py
                 ├── tertiary-stats.py
@@ -99,13 +96,11 @@
                 ├── positive-tiles.py
                 ├── tiles.py
         └── 📁utils
-            └── 📁__pycache__
-                ├── file.cpython-314.pyc
-            ├── file.py
-            ├── logic.py
-            ├── selection.py
+            ├── config.py
+            ├── reader.py
         ├── main.py
     ├── .gitignore
+    ├── LICENSE
     ├── plan.txt
     ├── README.md
     └── STRUCTURE.md

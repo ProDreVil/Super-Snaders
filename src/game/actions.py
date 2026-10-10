@@ -29,5 +29,23 @@ def skip_turn():
 def selection_action():
     pass
 
+def reroll_selection():
+    pass
+
+def select_boost():
+    pass
+
+def roll_boost():
+    pass
+
+def select_quirk():
+    pass
+
+def select_card():
+    pass
+
+def select_rule():
+    pass
+
 def open_shop():
     pass

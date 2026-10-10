@@ -7,6 +7,9 @@ def turn_details():
 def round_details():
     pass
 
+def player_details():
+    pass
+
 def print_stats():
     pass
 

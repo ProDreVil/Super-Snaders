@@ -17,13 +17,8 @@ def turn_loop(turn_order, player_count, current_turn):
     current_turn += 1
     for i in range(1, player_count + 1):
         current_player = turn_order[i]
-        if current_player == "Player 1":
-            player_turn(current_player)
-        else:
-            bot_turn(current_player)
-
-def selection_flow():
-    pass
+        player_turn(current_player) if current_player == "Player 1" else bot_turn(current_player)
 
 def end_game():
+    print("\nTHIS IS THE END")
     pass

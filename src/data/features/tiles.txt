@@ -1,0 +1,7 @@
+[POSITIVE]
+
+
+[NEUTRAL]
+Ordinary (Just an ordinary tile)
+
+[NEGATIVE]

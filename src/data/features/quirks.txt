@@ -1,0 +1,25 @@
+[STAT]
+<B> 
+<S> (Overflow) Combine Rejuvenation and Replenishment into Regeneration, affecting both Health and Mana. 
+<G> 
+
+[MOVEMENT]
+<B> 
+<S> 
+<G> 
+
+[FIELD]
+<B> 
+<S> 
+<G> 
+
+[SABOTAGE]
+<B> 
+<S> 
+<G> Pocket Portal (Place down a portal on all tiles you stopped on. Enemies that ends up on a portal deletes it and will be transported to the protal before it)
+<G> Aura Farm ()
+
+[GAMBLE]
+<B> 
+<S> Bruteforce (+50% Dice Shake's Mana Cost but the top face of your Dice is guaranteed to be the value rolled)
+<G> Super Snaders any% Speedrun (+{Player Count + Round} Rerolls now and +1 Rerolls every round. Possessing 20 Stats and 10 Quirks at the same time automatically leads to a win)
