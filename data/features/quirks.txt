@@ -1,10 +1,10 @@
 [STAT]
 <B> 
-<S> (Overflow) Combine Rejuvenation and Replenishment into Regeneration, affecting both Health and Mana. 
+<S> Overflow (Every 5% Rejuvenation and Replenishment is converted into 2 Regeneration. Excess Health & Mana from Regeneration grants Cash)
 <G> 
 
 [MOVEMENT]
-<B> 
+<B> Jaywalking (+50% Dice Shake Mana Cost. Move 1 tile after shaking a Dice)
 <S> 
 <G> 
 

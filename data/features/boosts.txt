@@ -1,7 +1,7 @@
 [STAT]
 Profit <10> (+{10 * Round} Cash)
-Rejuvenate <5> (+{0.5 * Health} Max Health)
-Replenish <5> (+{0.5 * Mana} Max Mana)
+Vitality <5> (+{0.5 * Health} Max Health)
+ <5> (+{0.5 * Mana} Max Mana)
 Strengthen <5> (+{0.5 * Power} Power)
 Continuity <1> (+{1} Reroll)
 Fortune <3> (+{0.3 * Luck}% Luck)

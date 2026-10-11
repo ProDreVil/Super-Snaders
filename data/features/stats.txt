@@ -1,0 +1,27 @@
+[PRIMARY]
+Cash <100> {10} (Currency used to buy items from the Shop)
+Economy <10> {1} (Produces Cash every round)
+Health <100> {10} (Your life, reaching 0 or less means death)
+Mana <100> {10} (Resource consumed and required when using a Die or Cards)
+Power <100> {10} (Overpowers snake and deals damage to Players on the same tile)
+Reroll <3> {1} (Amount of rerolls that can be performed)
+Replenishment <100> {1} (Refills Mana every round, excess Mana gained is converted into Cash)
+
+[SECONDARY]
+Critical Chance {5%} (Chance to increase a Die's value with your Critical Multiplier)
+Critical Multiplier {5%} (Multiplies the Dice Value and Damage on Critical Strikes)
+Dice Multiplier {0.25x} (Multiplies the Dice Value, unused decimals are preserved for later use)
+Discount {5%} (Percentage amount of price reduced to Shop Items)
+Hoppies {1} (Bonus flat value to your total Dice Value)
+Lethality {5%} (Increases damage dealth by a percentage)
+Lifesteal {5%} (Heals Health from a percentage of your damage dealt)
+Luck {5%} (Manipulates the odds to favor you more often)
+Manasteal {5%} (Replenishes Mana from a percentage of your damage dealt)
+Regeneration {2} (Recovers Health & Mana every turn)
+Rejuvenation {5%} (Heals Health every round, excess Health is converted into Cash)
+Resistance {5%} (Reduces damage received by a percentage)
+
+[TERTIARY]
+Influence {1} (Bonus votes on a Rule)
+Integrity {10} (How long each Quirk lasts, gained every turn and Quirk activation, reaching 100 destroys it)
+Omnistat {?} (???)
