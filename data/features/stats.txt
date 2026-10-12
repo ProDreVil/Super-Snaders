@@ -1,6 +1,7 @@
 [PRIMARY]
 Cash <100> {10} (Currency used to buy items from the Shop)
 Economy <10> {1} (Produces Cash every round)
+Experience <0> {10} (Unlocks Dice Slots & Card Slots)
 Health <100/100> {10} (Your life, reaching 0 or less means death)
 Mana <100/100> {10} (Resource consumed and required when using Dice or Cards)
 Power <100> {10} (Overpowers snake and deals damage to Players on the same tile)
@@ -14,9 +15,10 @@ Dice Multiplier {0.25x | 2x} (Multiplies the Dice Value, unused decimals are pre
 Discount {5%} (Percentage amount of price reduced to Shop Items)
 Ferocity {5%} (Increases damage dealth by a percentage)
 Hoppies {1} (Bonus flat value to your total Dice Value)
-Lifesteal {5%} (Heals Health from a percentage of your damage dealt)
+Lifesteal {5%} (Heals Health from a portion of your damage dealt)
 Luck {5%} (Manipulates the odds to favor you more often)
-Manasteal {5%} (Replenishes Mana from a percentage of your damage dealt)
+Manasteal {5%} (Replenishes Mana from a portion of your damage dealt)
+Potency {5%} (Increases Shop Items' effectiveness by a percentage)
 Regeneration {2%} (Recovers a percentage of Health & Mana every turn)
 Rejuvenation {10} (Heals Health every round, excess Health is converted into Cash)
 Resistance {5%} (Reduces damage received by a percentage)
@@ -25,3 +27,7 @@ Resistance {5%} (Reduces damage received by a percentage)
 Influence {1} (Bonus votes on a Rule)
 Integrity {10} (How long each Quirk lasts, gained every turn and Quirk activation, reaching 100 destroys it)
 Omnistat {?} (???)
+
+[UNLISTED]
+Dice Slot <1/3> {1} (Amount of Dice that a Player can hold)
+Card Slot <1/3> {1} (Amount of Cards that a Player can hold)

@@ -15,7 +15,27 @@ def input_players():
 
 def turn_action():
     turn_details()
-    print("Your Turn")
+    print("\n1. Roll Dice")
+    print("2. Shake Dice")
+    print("3. Use a Card")
+    print("4. Skip Turn")
+    while True:
+        choice = input("Choose an action: ").strip()
+        if choice in ("1", "2", "3", "4"):
+            return choice
+        print("Invalid choice. Try again.")
+
+def execute_action(current_player, action, positions, board_size):
+    if action == "1":
+        print("Roll Dice selected.")
+    elif action == "2":
+        print("Shake a Dice selected.")
+    elif action == "3":
+        print("Use a Card selected.")
+    elif action == "4":
+        skip_turn()
+        return True
+    return False
 
 def roll_dice():
     pass
@@ -24,7 +44,7 @@ def shake_dice():
     pass
 
 def skip_turn():
-    pass
+    print("You skipped your turn.")
 
 def selection_action():
     pass
