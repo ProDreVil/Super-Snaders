@@ -1,10 +1,10 @@
 [STAT]
-Profit <10> (+{10 * Round} Cash)
-Vitality <5> (+{0.5 * Health} Max Health)
- <5> (+{0.5 * Mana} Max Mana)
-Strengthen <5> (+{0.5 * Power} Power)
-Continuity <1> (+{1} Reroll)
-Fortune <3> (+{0.3 * Luck}% Luck)
+Profit (+`10 * Round` Cash)
+Vitality (+`0.5 * Max Health` Max Health)
+Spiritual (+`0.5 * Max Mana` Max Mana)
+Strengthen (+`0.5 * Power` Power)
+Continuity (+`1` Reroll)
+Fortune (+`0.3 * Luck`% Luck)
 
 [TEMPORARY]
 

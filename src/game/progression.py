@@ -1,7 +1,8 @@
 from game.actions import input_players
+from game.ai import bot_turn
 from game.assignments import assign_turn_order
 from game.board import create_board
-from game.logic import player_turn, bot_turn
+from game.logic import player_turn
 
 def start_game():
     current_turn = 0
