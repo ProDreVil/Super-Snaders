@@ -6,11 +6,13 @@ def winner():
 def death():
     pass
 
-def player_turn(current_player, positions, board_size):
+def player_turn(current_player, game_state):
+    positions = game_state["positions"]
+    board_size = game_state["board_size"]
     print(f"\n--- {current_player}'s Turn ---")
     while True:
         choice = turn_action()
-        turn_ended = execute_action(current_player, choice, positions, board_size)
+        turn_ended = execute_action(current_player, choice, game_state)
         if turn_ended:
             break
         if choice == "1":

@@ -22,4 +22,4 @@
 [GAMBLE]
 <B> 
 <S> Bruteforce (+50% Dice Shake's Mana Cost but the top face of your Dice is guaranteed to be the value rolled)
-<G> Super Snaders any% Speedrun (+{Player Count + Round} Rerolls now and +1 Rerolls every round. Possessing 20 Stats and 10 Quirks at the same time automatically leads to a win)
+<G> Super Snaders any% Speedrun (+`Player Count + Round` Rerolls now and +1 Rerolls every round. Possessing 20 Stats and 10 Quirks at the same time automatically leads to a win)

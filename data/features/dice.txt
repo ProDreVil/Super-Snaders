@@ -1,4 +1,5 @@
 [COMMON]
+Classic Dice (Get a random value from 1~6 || Randomize the odds of the Dice with the top face having the highest chance of appearing) : R 75 MP | S 10 MP:
 
 
 [RARE]

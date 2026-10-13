@@ -1,10 +1,13 @@
 [OFFENSE]
-
+Attack (Deal Damage to the target Player) : `5 * Tile Distance` MP:
 
 [DEFENSE]
 
 
 [UTILITY]
+
+
+[DISRUPTION]
 
 
 [MOVEMENT]

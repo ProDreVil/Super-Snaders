@@ -1,4 +1,5 @@
 from game.log import display_action_menu, system_message, turn_details
+from mechanics.dice.dice import dice_roll
 from utils.config import MAX_PLAYERS
 
 def input_players():
@@ -22,9 +23,10 @@ def turn_action():
             return choice
         print("Invalid choice. Try again.")
 
-def execute_action(current_player, action, positions, board_size):
+def execute_action(current_player, action, game_state):
     if action == "1":
         system_message(f"{current_player} selected Roll Dice.", "ACTION")
+        roll_dice()
     elif action == "2":
         system_message(f"{current_player} selected Shake Dice.", "ACTION")
     elif action == "3":
@@ -35,7 +37,9 @@ def execute_action(current_player, action, positions, board_size):
     return False
 
 def roll_dice():
-    pass
+    result = dice_roll()
+    print(f"You rolled a {result}!")
+    return result
 
 def shake_dice():
     pass

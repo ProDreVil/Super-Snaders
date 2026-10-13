@@ -5,6 +5,7 @@ Spiritual (+`0.5 * Max Mana` Max Mana)
 Strengthen (+`0.5 * Power` Power)
 Continuity (+`1` Reroll)
 Fortune (+`0.3 * Luck`% Luck)
+(Gain 5 different stats)
 
 [TEMPORARY]
 
