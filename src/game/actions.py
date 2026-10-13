@@ -1,4 +1,4 @@
-from game.log import turn_details
+from game.log import display_action_menu, system_message, turn_details
 from utils.config import MAX_PLAYERS
 
 def input_players():
@@ -15,10 +15,7 @@ def input_players():
 
 def turn_action():
     turn_details()
-    print("\n1. Roll Dice")
-    print("2. Shake Dice")
-    print("3. Use a Card")
-    print("4. Skip Turn")
+    display_action_menu()
     while True:
         choice = input("Choose an action: ").strip()
         if choice in ("1", "2", "3", "4"):
@@ -27,13 +24,13 @@ def turn_action():
 
 def execute_action(current_player, action, positions, board_size):
     if action == "1":
-        print("Roll Dice selected.")
+        system_message(f"{current_player} selected Roll Dice.", "ACTION")
     elif action == "2":
-        print("Shake a Dice selected.")
+        system_message(f"{current_player} selected Shake Dice.", "ACTION")
     elif action == "3":
-        print("Use a Card selected.")
+        system_message(f"{current_player} selected Use a Card.", "ACTION")
     elif action == "4":
-        skip_turn()
+        system_message(f"{current_player} skipped their turn.", "ACTION")
         return True
     return False
 

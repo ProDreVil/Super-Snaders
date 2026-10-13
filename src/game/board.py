@@ -1,7 +1,8 @@
-from utils.config import TILES_MULTIPLIER
+from game.log import system_message
+from utils.config import BOARD_TILES_MULTIPLIER
 
 def create_board(player_count):
-    board_size = player_count * TILES_MULTIPLIER
+    board_size = player_count * BOARD_TILES_MULTIPLIER
     cols = 10
     rows = board_size // cols
     board = [
@@ -10,10 +11,7 @@ def create_board(player_count):
         else list(range((row + 1) * cols, row * cols, -1))
         for row in range(rows)
     ]
-    print("Board size:", board_size)
-    # print("Total tiles:", sum(len(row) for row in board))
-    # print("Rows:", len(board))
-    # print("Last row:", board[-1])
+    system_message(f"Board size: {board_size} tiles.", "INFO")
     randomize_board(board_size)
     return board_size, board
 

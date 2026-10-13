@@ -1,0 +1,8 @@
+[2026-10-13 10:09:15] [SYSTEM] New game started.
+[2026-10-13 10:09:16] [INFO] Board size: 300 tiles.
+[2026-10-13 10:09:16] [INFO] Turn order: Player 1 -> Player 3 -> Player 2
+[2026-10-13 10:09:16] [ROUND] Round 1 started.
+[2026-10-13 10:10:04] [ACTION] Player 1 selected Roll Dice.
+[2026-10-13 10:10:04] [ACTION] Player 3 selected Roll Dice.
+[2026-10-13 10:10:04] [ACTION] Player 2 selected Roll Dice.
+[2026-10-13 10:10:04] [SYSTEM] Game ended.

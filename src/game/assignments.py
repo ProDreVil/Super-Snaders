@@ -1,5 +1,6 @@
 import random
 
+from game.log import system_message
 from utils.reader import load_txt
 
 def assign_players():
@@ -14,7 +15,7 @@ def assign_turn_order(player_count):
     turn_order = {}
     for turn, name in enumerate(player_list, start=1):
         turn_order[turn] = name
-    print(turn_order)
+    system_message("Turn order: " + " -> ".join(turn_order.values()), "INFO")
     return turn_order, player_list
 
 def define_stats():

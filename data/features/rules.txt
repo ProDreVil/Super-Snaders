@@ -1,32 +1,13 @@
-[BOOSTS]
-
-
-[CARDS]
-
-
-[DICE]
-
-
-[EFFECTS]
+[FIELD]
 
 
 [GAME]
 
 
-[ITEMS]
+[INVENTORY]
 
 
-[LADDERS]
+[PLAYERS]
 
 
-[QUIRKS]
-
-
-[SNAKES]
-Snakes can now be slayed
-
-
-[STATS]
-
-
-[TILES]
+[SELECTION]
