@@ -1,5 +1,5 @@
-from game.log import display_action_menu, system_message, turn_details
-from mechanics.dice.dice import dice_roll
+from game.log import *
+from mechanics.dice.dice import use_dice
 from utils.config import MAX_PLAYERS
 
 def input_players():
@@ -26,9 +26,12 @@ def turn_action():
 def execute_action(current_player, action, game_state):
     if action == "1":
         system_message(f"{current_player} selected Roll Dice.", "ACTION")
-        roll_dice()
+        dice_state = game_state["player_dice"][current_player]
+        roll_dice(dice_state, current_player)
     elif action == "2":
         system_message(f"{current_player} selected Shake Dice.", "ACTION")
+        dice_state = game_state["player_dice"][current_player]
+        shake_dice(dice_state, current_player)
     elif action == "3":
         system_message(f"{current_player} selected Use a Card.", "ACTION")
     elif action == "4":
@@ -36,13 +39,20 @@ def execute_action(current_player, action, game_state):
         return True
     return False
 
-def roll_dice():
-    result = dice_roll()
-    print(f"You rolled a {result}!")
+def roll_dice(dice_state, current_player):
+    print_dice_odds(dice_state, current_player)
+    result = use_dice("roll", dice_state)
+    system_message(f"{current_player} rolled {result}.", "DICE")
     return result
 
-def shake_dice():
-    pass
+def shake_dice(dice_state, current_player):
+    print_dice_odds(dice_state, current_player, "Odds before shake")
+    top_face = use_dice("shake", dice_state)
+    system_message(
+        f"{current_player} shook the dice. Top face: {top_face}; "
+        f"weights: {dice_state['weights']}", "DICE")
+    print_dice_odds(dice_state, current_player, "Odds after shake")
+    return top_face
 
 def skip_turn():
     print("You skipped your turn.")

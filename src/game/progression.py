@@ -4,6 +4,7 @@ from game.assignments import assign_turn_order, define_stats
 from game.board import create_board, display_board
 from game.log import save_log, start_log, system_message
 from game.logic import player_turn
+from mechanics.dice.common_dice import create_classic_dice_state
 
 def start_game():
     start_log()
@@ -14,12 +15,14 @@ def start_game():
     display_board(board)
     turn_order, player_list = assign_turn_order(player_count)
     player_stats = define_stats(player_list)
+    player_dice = {player: create_classic_dice_state() for player in player_list}
     game_state = {
         "player_count": player_count,
         "board_size": board_size,
         "turn_order": turn_order,
         "player_list": player_list,
         "player_stats": player_stats,
+        "player_dice": player_dice,
         "positions": {player: 1 for player in player_list},
         "current_turn": 0
     }

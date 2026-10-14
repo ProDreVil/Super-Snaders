@@ -3,6 +3,11 @@ import ast
 import operator
 import re
 
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "src")))
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 def load_txt(relative_path):
@@ -79,3 +84,49 @@ def parse_stat_value(value, variables=None):
         return int(value)
     except ValueError:
         return value
+
+def load_dice_definitions():
+    lines = load_txt("data/features/dice.txt")
+    dice_definitions = {}
+    current_tier = None
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        if line.startswith("[") and line.endswith("]"):
+            current_tier = line[1:-1]
+            continue
+        if current_tier is None:
+            continue
+        match = re.fullmatch(
+            r'(.+?)\s*\(F:\s*(\d+)~(\d+)\s*\|\s*'
+            r'R:\s*(\d+)\s*MP\s*\|\s*'
+            r'S:\s*(\d+)\s*MP\)\s*"(.+)"',
+            line
+        )
+        if not match:
+            raise ValueError(f"Invalid dice definition: {line}")
+        name, min_face, max_face, roll_cost, shake_cost, descriptions = (match.groups())
+        roll_description, shake_description = descriptions.split("||", 1)
+        face_range = f"{min_face}~{max_face}"
+        roll_description = roll_description.replace("`faces`", face_range)
+        shake_description = shake_description.replace("`faces`", face_range)
+        dice_definitions[name.strip()] = {
+            "tier": current_tier,
+            "faces": {"min": int(min_face), "max": int(max_face)},
+            "roll_cost": int(roll_cost),
+            "shake_cost": int(shake_cost),
+            "descriptions": {"roll": roll_description.strip(), "shake": shake_description.strip()}
+        }
+    return dice_definitions
+
+if __name__ == "__main__":
+    dice = load_dice_definitions()
+    for name, definition in dice.items():
+        print(f"\n{name}")
+        print(f"Tier: {definition['tier']}")
+        print(f"Faces: {definition['faces']['min']}~{definition['faces']['max']}")
+        print(f"Roll Cost: {definition['roll_cost']} MP")
+        print(f"Shake Cost: {definition['shake_cost']} MP")
+        print(f"Roll: {definition['descriptions']['roll']}")
+        print(f"Shake: {definition['descriptions']['shake']}")

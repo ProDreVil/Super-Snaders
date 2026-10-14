@@ -1,11 +1,11 @@
 [STAT]
-Profit (+`10 * Round` Cash)
-Vitality (+`0.5 * Max Health` Max Health)
-Spiritual (+`0.5 * Max Mana` Max Mana)
-Strengthen (+`0.5 * Power` Power)
-Continuity (+`1` Reroll)
-Fortune (+`0.3 * Luck`% Luck)
-(Gain 5 different stats)
+Profit "+`10 * Round` Cash"
+Vitality "+`0.5 * Max Health` Max Health"
+Spiritual "+`0.5 * Max Mana` Max Mana"
+Strengthen "+`0.5 * Power` Power"
+Continuity "+`1` Reroll"
+Fortune "+`0.3 * Luck`% Luck"
+"Gain 5 different stats"
 
 [TEMPORARY]
 

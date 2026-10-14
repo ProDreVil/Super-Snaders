@@ -2,6 +2,6 @@
 
 
 [NEUTRAL]
-Ordinary (Just an ordinary tile)
+Ordinary "Just an ordinary tile"
 
 [NEGATIVE]

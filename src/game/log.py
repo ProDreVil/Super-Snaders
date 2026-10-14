@@ -45,5 +45,14 @@ def player_details():
 def print_stats():
     pass
 
-def print_dice_odds():
-    pass
+def print_dice_odds(dice_state, player, label="Current odds"):
+    weights = dice_state["weights"]
+    total_weight = sum(weights.values())
+    if total_weight <= 0:
+        system_message(f"{player} dice odds cannot be calculated: invalid total weight.", "ERROR")
+        return
+    odds = ", ".join(
+        f"{face}={weight / total_weight * 100:.2f}%"
+        for face, weight in sorted(weights.items())
+    )
+    system_message(f"{player} {label}: {odds}", "DICE")

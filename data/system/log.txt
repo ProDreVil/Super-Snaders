@@ -1,8 +1,10 @@
-(2026-10-13 17:53:58) [SYSTEM] New game started.
-(2026-10-13 17:54:00) [INFO] Board size: 300 tiles.
-(2026-10-13 17:54:01) [INFO] Turn order: Player 2 -> Player 1 -> Player 3
-(2026-10-13 17:54:02) [ROUND] Round 1 started.
-(2026-10-13 17:54:02) [ACTION] Player 2 selected Roll Dice.
-(2026-10-13 17:54:17) [ACTION] Player 1 selected Roll Dice.
-(2026-10-13 17:54:17) [ACTION] Player 3 selected Roll Dice.
-(2026-10-13 17:54:17) [SYSTEM] Game ended.
+(2026-10-14 15:01:46) [SYSTEM] New game started.
+(2026-10-14 15:01:47) [INFO] Board size: 400 tiles.
+(2026-10-14 15:01:48) [INFO] Turn order: Player 4 -> Player 1 -> Player 3 -> Player 2
+(2026-10-14 15:01:48) [ROUND] Round 1 started.
+(2026-10-14 15:01:48) [ACTION] Player 4 selected Roll Dice.
+(2026-10-14 15:01:50) [ACTION] Player 1 selected Shake Dice.
+(2026-10-14 15:02:02) [ACTION] Player 1 selected Roll Dice.
+(2026-10-14 15:02:02) [ACTION] Player 3 selected Roll Dice.
+(2026-10-14 15:02:02) [ACTION] Player 2 selected Roll Dice.
+(2026-10-14 15:02:02) [SYSTEM] Game ended.
