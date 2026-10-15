@@ -18,10 +18,10 @@
             ├── cards.txt
             ├── dice.txt
             ├── effects.txt
-            ├── items.txt
             ├── ladders.txt
             ├── quirks.txt
             ├── rules.txt
+            ├── shop.txt
             ├── snakes.txt
             ├── stats.txt
             ├── tiles.txt
@@ -29,18 +29,21 @@
             ├── flow.txt
             ├── log.txt
             ├── names.txt
+            ├── personalities.txt
             ├── tutorial.txt
         ├── TUTORIAL.md
     └── 📁src
         └── 📁game
             └── 📁__pycache__
                 ├── actions.cpython-314.pyc
+                ├── ai.cpython-314.pyc
                 ├── assignments.cpython-314.pyc
                 ├── board.cpython-314.pyc
                 ├── log.cpython-314.pyc
                 ├── logic.cpython-314.pyc
                 ├── progression.cpython-314.pyc
             ├── actions.py
+            ├── ai.py
             ├── assignments.py
             ├── board.py
             ├── log.py
@@ -56,10 +59,15 @@
             └── 📁cards
                 ├── cards.py
                 ├── defense_cards.py
+                ├── disruption_cards.py
                 ├── movement_cards.py
                 ├── offense_cards.py
                 ├── utility_cards.py
             └── 📁dice
+                └── 📁__pycache__
+                    ├── common_dice.cpython-314.pyc
+                    ├── dice.cpython-314.pyc
+                ├── behaviors.py
                 ├── common_dice.py
                 ├── dice.py
                 ├── epic_dice.py
@@ -70,9 +78,6 @@
                 ├── effects.py
                 ├── negative_effects.py
                 ├── positive_effects.py
-            └── 📁items
-                ├── items.py
-                ├── shop.py
             └── 📁ladders
                 ├── ladders.py
             └── 📁quirks
@@ -83,21 +88,21 @@
                 ├── sabotage_quirks.py
                 ├── stat_quirks.py
             └── 📁rules
-                ├── boosts_rules.py
-                ├── cards_rules.py
-                ├── dice_rules.py
-                ├── effects_rules.py
+                ├── field_rules.py
                 ├── game_rules.py
-                ├── items_rules.py
-                ├── ladders_rules.py
-                ├── quirks_rules.py
+                ├── inventory_rules.py
+                ├── players_rules.py
                 ├── rules.py
-                ├── snakes_rules.py
-                ├── stats_rules.py
-                ├── tiles_rules.py
+                ├── selection_rules.py
+            └── 📁shop
+                ├── items.py
+                ├── modifiers.py
+                ├── shop.py
             └── 📁snakes
                 ├── snakes.py
             └── 📁stats
+                └── 📁__pycache__
+                    ├── stats.cpython-314.pyc
                 ├── primary_stats.py
                 ├── secondary_stats.py
                 ├── stats.py
@@ -121,8 +126,30 @@
     └── 📁web
         └── 📁static
             └── 📁css
+                ├── components.css
+                ├── game.css
+                ├── panels.css
+                ├── root.css
+                ├── style.css
+                ├── tooltips.css
             └── 📁js
+                ├── animations.js
+                ├── game.js
+                ├── overlays.js
         └── 📁templates
+            └── 📁components
+                ├── header.html
+                ├── inventory.html
+                ├── messages.html
+                ├── profile.html
+                ├── shop.html
+            └── 📁panels
+                ├── leaderboards.html
+                ├── menu.html
+                ├── selection.html
+            └── 📁tooltips
+                ├── powerup.html
+                ├── stats.html
             ├── index.html
     ├── .gitignore
     ├── LICENSE

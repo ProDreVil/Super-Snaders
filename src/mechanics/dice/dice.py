@@ -20,8 +20,12 @@ def use_dice(action, dice_state, game_state, current_player):
         else:
             print(f"Not enough Mana! This action requires {cost} MP.")
         return None
-    system_message(f"{current_player} spent {cost} MP to {action} {dice_state['name']}.", "MANA")
-    return actions[action](dice_state)
+    system_message(
+    f"{current_player} spent {cost} MP to {action} the {dice_state['name']}.", "MANA")
+    result = actions[action](dice_state)
+    mana = game_state["players"][current_player]["stats"]["Mana"]["value"]
+    system_message(f"{current_player}'s remaining Mana: {mana['current']}/{mana['maximum']} MP.", "MANA")
+    return result
 
 def dice_slots():
     pass

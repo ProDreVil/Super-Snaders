@@ -1,25 +1,39 @@
-(2026-10-15 16:23:08) [SYSTEM] New game started.
-(2026-10-15 16:23:09) [INFO] Board size: 200 tiles.
-(2026-10-15 16:23:09) [INFO] Turn order: Player 1 -> Player 2
-(2026-10-15 16:23:09) [ROUND] Round 1 started.
-(2026-10-15 16:23:11) [ACTION] Player 1 selected Shake Dice.
-(2026-10-15 16:23:11) [DICE] Player 1 Odds before shake: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
-(2026-10-15 16:23:11) [MANA] Player 1 spent 10 MP to shake Classic Dice.
-(2026-10-15 16:23:11) [DICE] Player 1 shook the dice. Top face: 3; weights: {3: 6, 5: 5, 2: 4, 4: 3, 1: 2, 6: 1}
-(2026-10-15 16:23:11) [DICE] Player 1 Odds after shake: 1=9.52%, 2=19.05%, 3=28.57%, 4=14.29%, 5=23.81%, 6=4.76%
-(2026-10-15 16:23:14) [ACTION] Player 1 selected Shake Dice.
-(2026-10-15 16:23:14) [DICE] Player 1 Odds before shake: 1=9.52%, 2=19.05%, 3=28.57%, 4=14.29%, 5=23.81%, 6=4.76%
-(2026-10-15 16:23:14) [MANA] Player 1 spent 10 MP to shake Classic Dice.
-(2026-10-15 16:23:14) [DICE] Player 1 shook the dice. Top face: 6; weights: {6: 6, 4: 5, 5: 4, 2: 3, 3: 2, 1: 1}
-(2026-10-15 16:23:14) [DICE] Player 1 Odds after shake: 1=4.76%, 2=14.29%, 3=9.52%, 4=23.81%, 5=19.05%, 6=28.57%
-(2026-10-15 16:23:16) [ACTION] Player 1 selected Shake Dice.
-(2026-10-15 16:23:16) [DICE] Player 1 Odds before shake: 1=4.76%, 2=14.29%, 3=9.52%, 4=23.81%, 5=19.05%, 6=28.57%
-(2026-10-15 16:23:26) [ACTION] Player 1 selected Roll Dice.
-(2026-10-15 16:23:26) [DICE] Player 1 Current odds: 1=4.76%, 2=14.29%, 3=9.52%, 4=23.81%, 5=19.05%, 6=28.57%
-(2026-10-15 16:23:26) [MANA] Player 1 spent 75 MP to roll Classic Dice.
-(2026-10-15 16:23:26) [DICE] Player 1 rolled 6.
-(2026-10-15 16:23:26) [ACTION] Player 2 selected Roll Dice.
-(2026-10-15 16:23:26) [DICE] Player 2 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
-(2026-10-15 16:23:26) [MANA] Player 2 spent 75 MP to roll Classic Dice.
-(2026-10-15 16:23:26) [DICE] Player 2 rolled 6.
-(2026-10-15 16:23:26) [SYSTEM] Game ended.
+(2026-10-15 20:00:00) [SYSTEM] New game started.
+(2026-10-15 20:00:01) [INFO] Board size: 400 tiles.
+(2026-10-15 20:00:02) [INFO] Turn order: Player 1 -> Player 2 -> Player 4 -> Player 3
+(2026-10-15 20:00:02) [ROUND] Round 1 started.
+(2026-10-15 20:00:09) [ACTION] Player 1 selected Shake Dice.
+(2026-10-15 20:00:09) [DICE] Player 1 Odds before shake: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-15 20:00:09) [MANA] Player 1 spent 10 MP to shake the Classic Dice.
+(2026-10-15 20:00:09) [MANA] Player 1's remaining Mana: 90/100 MP.
+(2026-10-15 20:00:09) [DICE] Player 1 shook the dice. Top face: 4; weights: {4: 6, 1: 5, 3: 4, 5: 3, 2: 2, 6: 1}
+(2026-10-15 20:00:09) [DICE] Player 1 Odds after shake: 1=23.81%, 2=9.52%, 3=19.05%, 4=28.57%, 5=14.29%, 6=4.76%
+(2026-10-15 20:00:13) [ACTION] Player 1 selected Shake Dice.
+(2026-10-15 20:00:13) [DICE] Player 1 Odds before shake: 1=23.81%, 2=9.52%, 3=19.05%, 4=28.57%, 5=14.29%, 6=4.76%
+(2026-10-15 20:00:13) [MANA] Player 1 spent 10 MP to shake the Classic Dice.
+(2026-10-15 20:00:13) [MANA] Player 1's remaining Mana: 80/100 MP.
+(2026-10-15 20:00:13) [DICE] Player 1 shook the dice. Top face: 3; weights: {3: 6, 6: 5, 4: 4, 5: 3, 1: 2, 2: 1}
+(2026-10-15 20:00:13) [DICE] Player 1 Odds after shake: 1=9.52%, 2=4.76%, 3=28.57%, 4=19.05%, 5=14.29%, 6=23.81%
+(2026-10-15 20:00:22) [ACTION] Player 1 selected Shake Dice.
+(2026-10-15 20:00:22) [DICE] Player 1 Odds before shake: 1=9.52%, 2=4.76%, 3=28.57%, 4=19.05%, 5=14.29%, 6=23.81%
+(2026-10-15 20:00:34) [ACTION] Player 1 selected Roll Dice.
+(2026-10-15 20:00:34) [DICE] Player 1 Current odds: 1=9.52%, 2=4.76%, 3=28.57%, 4=19.05%, 5=14.29%, 6=23.81%
+(2026-10-15 20:00:34) [MANA] Player 1 spent 75 MP to roll the Classic Dice.
+(2026-10-15 20:00:34) [MANA] Player 1's remaining Mana: 5/100 MP.
+(2026-10-15 20:00:34) [DICE] Player 1 rolled 6.
+(2026-10-15 20:00:34) [ACTION] Player 2 selected Roll Dice.
+(2026-10-15 20:00:34) [DICE] Player 2 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-15 20:00:34) [MANA] Player 2 spent 75 MP to roll the Classic Dice.
+(2026-10-15 20:00:34) [MANA] Player 2's remaining Mana: 25/100 MP.
+(2026-10-15 20:00:34) [DICE] Player 2 rolled 1.
+(2026-10-15 20:00:34) [ACTION] Player 4 selected Roll Dice.
+(2026-10-15 20:00:34) [DICE] Player 4 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-15 20:00:34) [MANA] Player 4 spent 75 MP to roll the Classic Dice.
+(2026-10-15 20:00:34) [MANA] Player 4's remaining Mana: 25/100 MP.
+(2026-10-15 20:00:34) [DICE] Player 4 rolled 5.
+(2026-10-15 20:00:34) [ACTION] Player 3 selected Roll Dice.
+(2026-10-15 20:00:34) [DICE] Player 3 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-15 20:00:34) [MANA] Player 3 spent 75 MP to roll the Classic Dice.
+(2026-10-15 20:00:34) [MANA] Player 3's remaining Mana: 25/100 MP.
+(2026-10-15 20:00:34) [DICE] Player 3 rolled 6.
+(2026-10-15 20:00:34) [SYSTEM] Game ended.
