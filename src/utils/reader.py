@@ -17,7 +17,7 @@ def load_txt(relative_path):
 def rand_name():
     pass
 
-def load_primary_stats():
+def load_stats(stat_type):
     lines = load_txt("data/features/stats.txt")
     stats = {}
     current_section = None
@@ -28,15 +28,16 @@ def load_primary_stats():
         if line.startswith("[") and line.endswith("]"):
             current_section = line[1:-1]
             continue
-        if current_section != "PRIMARY":
+        if current_section != stat_type:
             continue
-        name, remainder = line.split("<", 1)
-        value, remainder = remainder.split(">", 1)
-        point_value = remainder.split("{", 1)[1].split("}", 1)[0]
-        stats[name.strip()] = {
-            "value": value.strip(),
-            "point_value": point_value.strip()
-        }
+        name = line.split("<", 1)[0].split("{", 1)[0].strip()
+        value = None
+        point_value = None
+        if "<" in line and ">" in line:
+            value = line.split("<", 1)[1].split(">", 1)[0].strip()
+        if "{" in line and "}" in line:
+            point_value = line.split("{", 1)[1].split("}", 1)[0].strip()
+        stats[name] = {"value": value, "point_value": point_value}
     return stats
 
 def calculate_expression(expression, variables):
@@ -71,15 +72,15 @@ def calculate_expression(expression, variables):
     return int(result) if isinstance(result, float) and result.is_integer() else result
 
 def parse_stat_value(value, variables=None):
-    value = value.strip()
-    if value.startswith("`") and value.endswith("`"):
-        if variables is None:
-            return value
-        expression = value[1:-1]
-        return calculate_expression(expression, variables)
     if "/" in value:
         current, maximum = value.split("/", 1)
-        return {"current": int(current), "maximum": int(maximum)}
+        return {
+            "current": parse_stat_value(current.strip(), variables),
+            "maximum": parse_stat_value(maximum.strip(), variables)
+        }
+    if "`" in value and variables is not None:
+        expression = value.replace("`", "")
+        return calculate_expression(expression, variables)
     try:
         return int(value)
     except ValueError:
@@ -112,6 +113,7 @@ def load_dice_definitions():
         roll_description = roll_description.replace("`faces`", face_range)
         shake_description = shake_description.replace("`faces`", face_range)
         dice_definitions[name.strip()] = {
+            "name": name.strip(),
             "tier": current_tier,
             "faces": {"min": int(min_face), "max": int(max_face)},
             "roll_cost": int(roll_cost),

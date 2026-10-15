@@ -7,7 +7,7 @@ def death():
     pass
 
 def player_turn(current_player, game_state):
-    positions = game_state["positions"]
+    player_state = game_state["players"][current_player]
     board_size = game_state["board_size"]
     print(f"\n--- {current_player}'s Turn ---")
     while True:
@@ -18,7 +18,7 @@ def player_turn(current_player, game_state):
         if choice == "1":
             break
         elif choice == "2":
-            print(f"Position: {positions[current_player]}/{board_size}")
+            print(f"Position: {player_state['position']}/{board_size}")
 
 def detect_position(position, movement, board_size):
     new_position = position + movement

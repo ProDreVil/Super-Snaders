@@ -1,15 +1,20 @@
 import random
 
-import os
-import sys
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "src")))
-
 from game.log import system_message
-from utils.reader import load_primary_stats, parse_stat_value
+from mechanics.dice.common_dice import create_dice_state
+from utils.reader import load_dice_definitions, load_stats, parse_stat_value
 
-def assign_players():
-    pass
+def assign_players(player_list, player_stats):
+    dice_definitions = load_dice_definitions()
+    dice_definition = dice_definitions["Classic Dice"]
+    players = {}
+    for player in player_list:
+        players[player] = {
+            "stats": player_stats[player],
+            "dice": create_dice_state(dice_definition, len(player_list)),
+            "position": 1
+        }
+    return players
 
 def assign_name():
     # names = load_txt("./data/names.txt")
@@ -25,7 +30,7 @@ def assign_turn_order(player_count):
     return turn_order, player_list
 
 def define_stats(player_list):
-    primary_stats = load_primary_stats()
+    primary_stats = load_stats("PRIMARY")
     player_stats = {}
     for player in player_list:
         player_stats[player] = {}
@@ -34,15 +39,14 @@ def define_stats(player_list):
             player_stats[player][name] = {"value": value, "point_value": stat["point_value"]}
     return player_stats
 
-if __name__ == "__main__":
-    test_players = ["Player 1", "Player 2", "Player 3"]
-    stats = define_stats(test_players)
-
-    for player, player_stats in stats.items():
-        print(f"\n--- {player} ---")
-
-        for name, stat in player_stats.items():
-            print(
-                f"{name}: {stat['value']} "
-                f"(Point Value: {stat['point_value']})"
-            )
+def create_game_state(player_count):
+    turn_order, player_list = assign_turn_order(player_count)
+    player_stats = define_stats(player_list)
+    players = assign_players(player_list, player_stats)
+    return {
+        "player_count": player_count,
+        "turn_order": turn_order,
+        "player_list": player_list,
+        "players": players,
+        "current_turn": 0
+    }

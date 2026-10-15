@@ -26,12 +26,12 @@ def turn_action():
 def execute_action(current_player, action, game_state):
     if action == "1":
         system_message(f"{current_player} selected Roll Dice.", "ACTION")
-        dice_state = game_state["player_dice"][current_player]
-        roll_dice(dice_state, current_player)
+        dice_state = game_state["players"][current_player]["dice"]
+        roll_dice(dice_state, current_player, game_state)
     elif action == "2":
         system_message(f"{current_player} selected Shake Dice.", "ACTION")
-        dice_state = game_state["player_dice"][current_player]
-        shake_dice(dice_state, current_player)
+        dice_state = game_state["players"][current_player]["dice"]
+        shake_dice(dice_state, current_player, game_state)
     elif action == "3":
         system_message(f"{current_player} selected Use a Card.", "ACTION")
     elif action == "4":
@@ -39,15 +39,19 @@ def execute_action(current_player, action, game_state):
         return True
     return False
 
-def roll_dice(dice_state, current_player):
+def roll_dice(dice_state, current_player, game_state):
     print_dice_odds(dice_state, current_player)
-    result = use_dice("roll", dice_state)
+    result = use_dice("roll", dice_state, game_state, current_player)
+    if result is None:
+        return None
     system_message(f"{current_player} rolled {result}.", "DICE")
     return result
 
-def shake_dice(dice_state, current_player):
+def shake_dice(dice_state, current_player, game_state):
     print_dice_odds(dice_state, current_player, "Odds before shake")
-    top_face = use_dice("shake", dice_state)
+    top_face = use_dice("shake", dice_state, game_state, current_player)
+    if top_face is None:
+        return None
     system_message(
         f"{current_player} shook the dice. Top face: {top_face}; "
         f"weights: {dice_state['weights']}", "DICE")
