@@ -1,14 +1,22 @@
 [FIELD]
-Snakes can be slayed
-
+Snakeslayer "Snakes can be slayed"
+Minesweeper "Transform `total_tiles / 4` tiles into Landmine Tiles"
+The Floor is Lava "The lava spawns on the 1st row and rises every round. When hit, it deals 10% Max Health and forces you to move upwards. Destroys snakes and ladders on contact."
+Happy Feet "Players sets up the tiles they touched on fire for 1 cycle. The fire inflicts Burning I for 1 turn."
 
 [GAME]
-
+Chaos in Order "The turn order, selection flow, and round number will be randomized every round."
+Panic Timer "The timer for players' turn is reduced by 70% but game speed is doubled."
+Lap 2 "Upon reaching the end tile, you will be sent back to the start but with a +`player_count`x Dice Multiplier bonus."
 
 [INVENTORY]
-
+Carefree "Players' inventory are swapped randomly every round."
 
 [PLAYERS]
-
+Highrolling "Everyone receives 99 Rerolls!"
 
 [SELECTION]
+Fun Time "On odd rounds, players will vote to add a rule. On even rounds, players will vote to remove a rule instead."
+Stat Check "Current and future Boosters' effects are doubled."
+DIAMONDS! "Everyone gains a Diamond Quirk. Diamond Quirks can now appear naturally on selections."
+Decision Making "If the total votes for this Rule is odd, Selections will have one bonus option. If even, it will have one less option instead."

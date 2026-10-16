@@ -2,4 +2,5 @@
 
 
 [NEGATIVE]
-Stuned
+Stunned
+Burn "Deals `10 * intensity`% Damage every turn. Receiving another burn stacks the intensity and duration"
