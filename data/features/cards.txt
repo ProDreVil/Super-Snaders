@@ -1,5 +1,7 @@
 [OFFENSE]
 Attack (`5 * Tile Distance` MP) "Deal Damage to the target Player"
+Criss-Cross () "Deal Damage to Players"
+
 
 [DEFENSE]
 

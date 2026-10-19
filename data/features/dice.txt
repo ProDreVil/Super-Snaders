@@ -2,11 +2,11 @@
 Classic Dice (F: 1~6 | R: 75 MP | S: 10 MP) "Roll a random value between `faces` || Randomize the odds of the Dice with the top face having the highest chance of appearing"
 
 [RARE]
-Golden Dice
-Black Dice
+Golden Dice (F: 1~6 | R: 0 MP | S: 0 MP) "0 || 0"
+Black Dice (F: 1~6 | R: 0 MP | S: 0 MP) "0 || 0"
 
 [EPIC]
-Onion Dice
+Onion Dice (F: 1~6 | R: 0 MP | S: 0 MP) "0 || 0"
 
 [LEGENDARY]
 
