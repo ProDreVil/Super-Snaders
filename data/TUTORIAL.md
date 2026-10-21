@@ -1,4 +1,4 @@
 ```
 [TYPE]
-Name <Value> (Description)
+Name <Initial Value> {Point Value} "Description"
 ```

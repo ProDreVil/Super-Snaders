@@ -6,12 +6,26 @@
             └── 📁sfx
                 ├── buzzer.mp3
         └── 📁images
+            └── 📁board
+                └── 📁ladders
+                └── 📁snakes
+                └── 📁tiles
             └── 📁icons
-            └── 📁laddders
+                └── 📁effects
+                └── 📁stats
+            └── 📁inventory
+                └── 📁cards
+                └── 📁dice
+                └── 📁items
+                └── 📁modifiers
             └── 📁placeholders
+                └── 📁secrets
                 ├── luna.png
-            └── 📁snakes
-            └── 📁tiles
+            └── 📁selections
+                └── 📁boosters
+                └── 📁quirks
+                └── 📁rules
+            └── 📁sprites
     └── 📁data
         └── 📁features
             ├── boosts.txt
@@ -79,6 +93,9 @@
                 ├── negative_effects.py
                 ├── positive_effects.py
             └── 📁ladders
+                ├── gen1_ladders.py
+                ├── gen2_ladders.py
+                ├── gen3_ladders.py
                 ├── ladders.py
             └── 📁quirks
                 ├── field_quirks.py
@@ -99,6 +116,9 @@
                 ├── modifiers.py
                 ├── shop.py
             └── 📁snakes
+                ├── gen1_snakes.py
+                ├── gen2_snakes.py
+                ├── gen3_snakes.py
                 ├── snakes.py
             └── 📁stats
                 └── 📁__pycache__

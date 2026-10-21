@@ -24,6 +24,18 @@ def display_board(board):
 def randomize_board(board_size):
     pass
 
+def detect_position(position, movement, board_size):
+    return min(position + movement, board_size)
+
+def move_player(current_player, movement, game_state):
+    player_state = game_state["players"][current_player]
+    old_position = player_state["position"]
+    new_position = detect_position(old_position, movement, game_state["board_size"])
+    player_state["position"] = new_position
+    system_message(f"{current_player} is now at tile {new_position}/{game_state['board_size']}.", "POSITION")
+    system_message(f"{current_player} moved from tile {old_position} to tile {new_position}.", "MOVEMENT")
+    return new_position
+
 def deploy_snakes():
     pass
 

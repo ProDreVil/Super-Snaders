@@ -27,9 +27,11 @@ def system_message(message, message_type="SYSTEM"):
     print(f"[{message_type}] {message}")
     save_log()
 
-def display_action_menu():
-    print("1. Roll Dice")
-    print("2. Shake Dice")
+def display_action_menu(can_roll=True, can_shake=True):
+    if can_roll:
+        print("1. Roll Dice")
+    if can_shake:
+        print("2. Shake Dice")
     print("3. Use a Card")
     print("4. Skip Turn")
 

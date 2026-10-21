@@ -1,6 +1,7 @@
 from game.log import system_message
 from mechanics.dice.common_dice import *
 from mechanics.stats.stats import spend_mana
+from utils.config import ROLL_STAMINA_COST, SHAKE_STAMINA_COST
 
 def dice_roll(dice_state):
     return classic_dice_roll(dice_state)
@@ -13,18 +14,23 @@ def use_dice(action, dice_state, game_state, current_player):
     if action not in actions:
         raise ValueError(f"Unknown dice action: {action}")
     cost = dice_state[f"{action}_cost"]
-    reserve = dice_state["roll_cost"] if action == "shake" else 0
-    if not spend_mana(game_state, current_player, cost, reserve):
-        if action == "shake":
-            print(f"Not enough Mana to shake! You must retain {dice_state['roll_cost']} MP to roll afterward.")
-        else:
-            print(f"Not enough Mana! This action requires {cost} MP.")
-        return None
-    system_message(
-    f"{current_player} spent {cost} MP to {action} the {dice_state['name']}.", "MANA")
-    result = actions[action](dice_state)
+    stamina_cost = ROLL_STAMINA_COST if action == "roll" else SHAKE_STAMINA_COST
+    reserve_mana = dice_state["roll_cost"] if action == "shake" else 0
+    reserve_stamina = ROLL_STAMINA_COST if action == "shake" else 0
     mana = game_state["players"][current_player]["stats"]["Mana"]["value"]
-    system_message(f"{current_player}'s remaining Mana: {mana['current']}/{mana['maximum']} MP.", "MANA")
+    stamina = dice_state["stamina"]
+    if mana["current"] - cost < reserve_mana:
+        print(f"Not enough Mana to {action} while retaining enough to roll.")
+        return None
+    if stamina["current"] - stamina_cost < reserve_stamina:
+        print(f"Not enough Stamina to {action} while retaining enough to roll.")
+        return None
+    if not spend_mana(game_state, current_player, cost, reserve_mana):
+        return None
+    stamina["current"] -= stamina_cost
+    system_message(f"{current_player} spent {cost} MP and {stamina_cost} Stamina to {action} the {dice_state['name']}.", "DICE")
+    result = actions[action](dice_state)
+    system_message(f"{current_player}'s remaining Mana: {mana['current']}/{mana['maximum']} MP; Stamina: {stamina['current']}/{stamina['maximum']}.", "DICE")
     return result
 
 def dice_slots():

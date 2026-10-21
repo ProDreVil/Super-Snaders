@@ -4,6 +4,8 @@ from game.assignments import create_game_state
 from game.board import create_board, display_board
 from game.log import save_log, start_log, system_message
 from game.logic import player_turn
+from mechanics.stats.stats import replenish_mana
+from utils.config import MAX_ROUNDS
 
 def start_game():
     start_log()
@@ -17,7 +19,9 @@ def start_game():
     game_loop(game_state)
 
 def game_loop(game_state):
-    turn_loop(game_state)
+    while game_state["current_turn"] < MAX_ROUNDS:
+        turn_loop(game_state)
+    system_message(f"Reached the temporary limit of {MAX_ROUNDS} rounds.", "INFO")
 
 def turn_loop(game_state):
     game_state["current_turn"] += 1
@@ -29,6 +33,8 @@ def turn_loop(game_state):
             player_turn(current_player, game_state)
         else:
             bot_turn(current_player, game_state)
+    for current_player in game_state["player_list"]:
+        replenish_mana(game_state, current_player)
 
 def end_game():
     system_message("Game ended.")

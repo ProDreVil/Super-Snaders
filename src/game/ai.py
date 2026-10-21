@@ -1,6 +1,8 @@
-from game.actions import execute_action
+from game.logic import process_turn
+
+def choose_bot_action():
+    print("Bot chooses: Roll Dice")
+    return "1"
 
 def bot_turn(current_player, game_state):
-    print(f"\n--- {current_player}'s Turn (Bot) ---")
-    print("Bot chooses: Roll Dice")
-    execute_action(current_player, "1", game_state)
+    process_turn(current_player, game_state, choose_bot_action, is_bot=True)
