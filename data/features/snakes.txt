@@ -1,5 +1,8 @@
-[GENERATION 1]
-
+[IRL]
+Python
+Sidewinder
+King Cobra
+Black Mamba
 
 [GENERATION 2]
 
