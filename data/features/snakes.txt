@@ -3,6 +3,7 @@ Python
 Sidewinder
 King Cobra
 Black Mamba
+Cobra
 
 [GENERATION 2]
 
