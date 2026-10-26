@@ -4,7 +4,7 @@ Criss-Cross () "Deal Damage to Players"
 
 
 [DEFENSE]
-
+Shield () "Become immune to the next attack"
 
 [UTILITY]
 

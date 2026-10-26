@@ -1,1 +1,196 @@
-(2026-10-22 22:34:03) [SYSTEM] New game started.
+(2026-10-26 22:44:39) [SYSTEM] New game started.
+(2026-10-26 22:44:42) [INFO] Board size: 300 tiles.
+(2026-10-26 22:44:43) [INFO] Turn order: Player 2 -> Player 3 -> Player 1
+(2026-10-26 22:44:43) [ROUND] Round 1 started.
+(2026-10-26 22:44:43) [POSITION] Player 2 is at tile 1/300.
+(2026-10-26 22:44:43) [STAMINA] Player 2 recovered Stamina: 9/9.
+(2026-10-26 22:44:43) [STAMINA] Player 3 recovered Stamina: 9/9.
+(2026-10-26 22:44:43) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:43) [ACTION] Player 2 selected Roll Dice.
+(2026-10-26 22:44:43) [DICE] Player 2 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:43) [DICE] Player 2 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:43) [DICE] Player 2's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:43) [DICE] Player 2 rolled 6.
+(2026-10-26 22:44:43) [POSITION] Player 2 is now at tile 7/300.
+(2026-10-26 22:44:43) [MOVEMENT] Player 2 moved from tile 1 to tile 7.
+(2026-10-26 22:44:43) [POSITION] Player 3 is at tile 1/300.
+(2026-10-26 22:44:43) [STAMINA] Player 2 recovered Stamina: 8/9.
+(2026-10-26 22:44:43) [STAMINA] Player 3 recovered Stamina: 9/9.
+(2026-10-26 22:44:43) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:43) [ACTION] Player 3 selected Roll Dice.
+(2026-10-26 22:44:43) [DICE] Player 3 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:43) [DICE] Player 3 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:43) [DICE] Player 3's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:43) [DICE] Player 3 rolled 5.
+(2026-10-26 22:44:43) [POSITION] Player 3 is now at tile 6/300.
+(2026-10-26 22:44:43) [MOVEMENT] Player 3 moved from tile 1 to tile 6.
+(2026-10-26 22:44:43) [POSITION] Player 1 is at tile 1/300.
+(2026-10-26 22:44:43) [STAMINA] Player 2 recovered Stamina: 9/9.
+(2026-10-26 22:44:43) [STAMINA] Player 3 recovered Stamina: 8/9.
+(2026-10-26 22:44:43) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:49) [ACTION] Player 1 selected Roll Dice.
+(2026-10-26 22:44:49) [DICE] Player 1 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:49) [DICE] Player 1 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:50) [DICE] Player 1's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:50) [DICE] Player 1 rolled 6.
+(2026-10-26 22:44:50) [POSITION] Player 1 is now at tile 7/300.
+(2026-10-26 22:44:50) [MOVEMENT] Player 1 moved from tile 1 to tile 7.
+(2026-10-26 22:44:50) [REPLENISHMENT] Player 2 converted 25 excess Mana into 25 Cash.
+(2026-10-26 22:44:50) [REPLENISHMENT] Player 2 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:50) [REPLENISHMENT] Player 3 converted 25 excess Mana into 25 Cash.
+(2026-10-26 22:44:50) [REPLENISHMENT] Player 3 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:50) [REPLENISHMENT] Player 1 converted 25 excess Mana into 25 Cash.
+(2026-10-26 22:44:50) [REPLENISHMENT] Player 1 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:50) [ROUND] Round 2 started.
+(2026-10-26 22:44:50) [POSITION] Player 2 is at tile 7/300.
+(2026-10-26 22:44:50) [STAMINA] Player 2 recovered Stamina: 9/9.
+(2026-10-26 22:44:50) [STAMINA] Player 3 recovered Stamina: 9/9.
+(2026-10-26 22:44:50) [STAMINA] Player 1 recovered Stamina: 8/9.
+(2026-10-26 22:44:50) [ACTION] Player 2 selected Roll Dice.
+(2026-10-26 22:44:50) [DICE] Player 2 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:50) [DICE] Player 2 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:50) [DICE] Player 2's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:50) [DICE] Player 2 rolled 5.
+(2026-10-26 22:44:50) [POSITION] Player 2 is now at tile 12/300.
+(2026-10-26 22:44:50) [MOVEMENT] Player 2 moved from tile 7 to tile 12.
+(2026-10-26 22:44:50) [POSITION] Player 3 is at tile 6/300.
+(2026-10-26 22:44:50) [STAMINA] Player 2 recovered Stamina: 8/9.
+(2026-10-26 22:44:50) [STAMINA] Player 3 recovered Stamina: 9/9.
+(2026-10-26 22:44:50) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:50) [ACTION] Player 3 selected Roll Dice.
+(2026-10-26 22:44:50) [DICE] Player 3 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:50) [DICE] Player 3 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:50) [DICE] Player 3's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:50) [DICE] Player 3 rolled 2.
+(2026-10-26 22:44:50) [POSITION] Player 3 is now at tile 8/300.
+(2026-10-26 22:44:50) [MOVEMENT] Player 3 moved from tile 6 to tile 8.
+(2026-10-26 22:44:50) [POSITION] Player 1 is at tile 7/300.
+(2026-10-26 22:44:50) [STAMINA] Player 2 recovered Stamina: 9/9.
+(2026-10-26 22:44:50) [STAMINA] Player 3 recovered Stamina: 8/9.
+(2026-10-26 22:44:50) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:51) [ACTION] Player 1 selected Shake Dice.
+(2026-10-26 22:44:51) [DICE] Player 1 Odds before shake: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:51) [DICE] Player 1 spent 10 MP and 1 Stamina to shake the Classic Dice.
+(2026-10-26 22:44:51) [DICE] Player 1's remaining Mana: 90/100 MP; Stamina: 8/9.
+(2026-10-26 22:44:51) [DICE] Player 1 shook the dice. Top face: 2; weights: {2: 6, 3: 5, 1: 4, 6: 3, 5: 2, 4: 1}
+(2026-10-26 22:44:51) [DICE] Player 1 Odds after shake: 1=19.05%, 2=28.57%, 3=23.81%, 4=4.76%, 5=9.52%, 6=14.29%
+(2026-10-26 22:44:53) [ACTION] Player 1 selected Roll Dice.
+(2026-10-26 22:44:53) [DICE] Player 1 Current odds: 1=19.05%, 2=28.57%, 3=23.81%, 4=4.76%, 5=9.52%, 6=14.29%
+(2026-10-26 22:44:53) [DICE] Player 1 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:53) [DICE] Player 1's remaining Mana: 15/100 MP; Stamina: 5/9.
+(2026-10-26 22:44:53) [DICE] Player 1 rolled 3.
+(2026-10-26 22:44:53) [POSITION] Player 1 is now at tile 10/300.
+(2026-10-26 22:44:53) [MOVEMENT] Player 1 moved from tile 7 to tile 10.
+(2026-10-26 22:44:53) [REPLENISHMENT] Player 2 converted 25 excess Mana into 25 Cash.
+(2026-10-26 22:44:53) [REPLENISHMENT] Player 2 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:53) [REPLENISHMENT] Player 3 converted 25 excess Mana into 25 Cash.
+(2026-10-26 22:44:53) [REPLENISHMENT] Player 3 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:53) [REPLENISHMENT] Player 1 converted 15 excess Mana into 15 Cash.
+(2026-10-26 22:44:53) [REPLENISHMENT] Player 1 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:53) [ROUND] Round 3 started.
+(2026-10-26 22:44:53) [POSITION] Player 2 is at tile 12/300.
+(2026-10-26 22:44:53) [STAMINA] Player 2 recovered Stamina: 9/9.
+(2026-10-26 22:44:53) [STAMINA] Player 3 recovered Stamina: 9/9.
+(2026-10-26 22:44:53) [STAMINA] Player 1 recovered Stamina: 7/9.
+(2026-10-26 22:44:53) [ACTION] Player 2 selected Roll Dice.
+(2026-10-26 22:44:53) [DICE] Player 2 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:53) [DICE] Player 2 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:53) [DICE] Player 2's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:53) [DICE] Player 2 rolled 3.
+(2026-10-26 22:44:53) [POSITION] Player 2 is now at tile 15/300.
+(2026-10-26 22:44:53) [MOVEMENT] Player 2 moved from tile 12 to tile 15.
+(2026-10-26 22:44:53) [POSITION] Player 3 is at tile 8/300.
+(2026-10-26 22:44:53) [STAMINA] Player 2 recovered Stamina: 8/9.
+(2026-10-26 22:44:53) [STAMINA] Player 3 recovered Stamina: 9/9.
+(2026-10-26 22:44:53) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:53) [ACTION] Player 3 selected Roll Dice.
+(2026-10-26 22:44:53) [DICE] Player 3 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:53) [DICE] Player 3 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:53) [DICE] Player 3's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:53) [DICE] Player 3 rolled 6.
+(2026-10-26 22:44:53) [POSITION] Player 3 is now at tile 14/300.
+(2026-10-26 22:44:53) [MOVEMENT] Player 3 moved from tile 8 to tile 14.
+(2026-10-26 22:44:53) [POSITION] Player 1 is at tile 10/300.
+(2026-10-26 22:44:53) [STAMINA] Player 2 recovered Stamina: 9/9.
+(2026-10-26 22:44:53) [STAMINA] Player 3 recovered Stamina: 8/9.
+(2026-10-26 22:44:53) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:53) [ACTION] Player 1 selected Shake Dice.
+(2026-10-26 22:44:54) [DICE] Player 1 Odds before shake: 1=19.05%, 2=28.57%, 3=23.81%, 4=4.76%, 5=9.52%, 6=14.29%
+(2026-10-26 22:44:54) [DICE] Player 1 spent 10 MP and 1 Stamina to shake the Classic Dice.
+(2026-10-26 22:44:54) [DICE] Player 1's remaining Mana: 90/100 MP; Stamina: 8/9.
+(2026-10-26 22:44:54) [DICE] Player 1 shook the dice. Top face: 3; weights: {3: 6, 1: 5, 4: 4, 5: 3, 2: 2, 6: 1}
+(2026-10-26 22:44:54) [DICE] Player 1 Odds after shake: 1=23.81%, 2=9.52%, 3=28.57%, 4=19.05%, 5=14.29%, 6=4.76%
+(2026-10-26 22:44:54) [ACTION] Player 1 selected Roll Dice.
+(2026-10-26 22:44:54) [DICE] Player 1 Current odds: 1=23.81%, 2=9.52%, 3=28.57%, 4=19.05%, 5=14.29%, 6=4.76%
+(2026-10-26 22:44:54) [DICE] Player 1 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:54) [DICE] Player 1's remaining Mana: 15/100 MP; Stamina: 5/9.
+(2026-10-26 22:44:54) [DICE] Player 1 rolled 4.
+(2026-10-26 22:44:54) [POSITION] Player 1 is now at tile 14/300.
+(2026-10-26 22:44:54) [MOVEMENT] Player 1 moved from tile 10 to tile 14.
+(2026-10-26 22:44:54) [REPLENISHMENT] Player 2 converted 25 excess Mana into 25 Cash.
+(2026-10-26 22:44:54) [REPLENISHMENT] Player 2 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:54) [REPLENISHMENT] Player 3 converted 25 excess Mana into 25 Cash.
+(2026-10-26 22:44:54) [REPLENISHMENT] Player 3 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:54) [REPLENISHMENT] Player 1 converted 15 excess Mana into 15 Cash.
+(2026-10-26 22:44:54) [REPLENISHMENT] Player 1 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:54) [ROUND] Round 4 started.
+(2026-10-26 22:44:54) [POSITION] Player 2 is at tile 15/300.
+(2026-10-26 22:44:54) [STAMINA] Player 2 recovered Stamina: 9/9.
+(2026-10-26 22:44:54) [STAMINA] Player 3 recovered Stamina: 9/9.
+(2026-10-26 22:44:54) [STAMINA] Player 1 recovered Stamina: 7/9.
+(2026-10-26 22:44:54) [ACTION] Player 2 selected Roll Dice.
+(2026-10-26 22:44:54) [DICE] Player 2 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:54) [DICE] Player 2 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:54) [DICE] Player 2's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:54) [DICE] Player 2 rolled 1.
+(2026-10-26 22:44:54) [POSITION] Player 2 is now at tile 16/300.
+(2026-10-26 22:44:54) [MOVEMENT] Player 2 moved from tile 15 to tile 16.
+(2026-10-26 22:44:54) [POSITION] Player 3 is at tile 14/300.
+(2026-10-26 22:44:54) [STAMINA] Player 2 recovered Stamina: 8/9.
+(2026-10-26 22:44:54) [STAMINA] Player 3 recovered Stamina: 9/9.
+(2026-10-26 22:44:54) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:54) [ACTION] Player 3 selected Roll Dice.
+(2026-10-26 22:44:54) [DICE] Player 3 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:54) [DICE] Player 3 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:54) [DICE] Player 3's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:54) [DICE] Player 3 rolled 6.
+(2026-10-26 22:44:54) [POSITION] Player 3 is now at tile 20/300.
+(2026-10-26 22:44:54) [MOVEMENT] Player 3 moved from tile 14 to tile 20.
+(2026-10-26 22:44:54) [POSITION] Player 1 is at tile 14/300.
+(2026-10-26 22:44:54) [STAMINA] Player 2 recovered Stamina: 9/9.
+(2026-10-26 22:44:54) [STAMINA] Player 3 recovered Stamina: 8/9.
+(2026-10-26 22:44:54) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:57) [ACTION] Player 1 skipped their turn.
+(2026-10-26 22:44:57) [REPLENISHMENT] Player 2 converted 25 excess Mana into 25 Cash.
+(2026-10-26 22:44:57) [REPLENISHMENT] Player 2 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:57) [REPLENISHMENT] Player 3 converted 25 excess Mana into 25 Cash.
+(2026-10-26 22:44:57) [REPLENISHMENT] Player 3 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:57) [REPLENISHMENT] Player 1 converted 100 excess Mana into 100 Cash.
+(2026-10-26 22:44:57) [REPLENISHMENT] Player 1 replenished Mana: 100/100 MP.
+(2026-10-26 22:44:57) [ROUND] Round 5 started.
+(2026-10-26 22:44:57) [POSITION] Player 2 is at tile 16/300.
+(2026-10-26 22:44:57) [STAMINA] Player 2 recovered Stamina: 9/9.
+(2026-10-26 22:44:57) [STAMINA] Player 3 recovered Stamina: 9/9.
+(2026-10-26 22:44:57) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:57) [ACTION] Player 2 selected Roll Dice.
+(2026-10-26 22:44:57) [DICE] Player 2 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:57) [DICE] Player 2 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:57) [DICE] Player 2's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:57) [DICE] Player 2 rolled 2.
+(2026-10-26 22:44:58) [POSITION] Player 2 is now at tile 18/300.
+(2026-10-26 22:44:58) [MOVEMENT] Player 2 moved from tile 16 to tile 18.
+(2026-10-26 22:44:58) [POSITION] Player 3 is at tile 20/300.
+(2026-10-26 22:44:58) [STAMINA] Player 2 recovered Stamina: 8/9.
+(2026-10-26 22:44:58) [STAMINA] Player 3 recovered Stamina: 9/9.
+(2026-10-26 22:44:58) [STAMINA] Player 1 recovered Stamina: 9/9.
+(2026-10-26 22:44:58) [ACTION] Player 3 selected Roll Dice.
+(2026-10-26 22:44:58) [DICE] Player 3 Current odds: 1=16.67%, 2=16.67%, 3=16.67%, 4=16.67%, 5=16.67%, 6=16.67%
+(2026-10-26 22:44:58) [DICE] Player 3 spent 75 MP and 3 Stamina to roll the Classic Dice.
+(2026-10-26 22:44:58) [DICE] Player 3's remaining Mana: 25/100 MP; Stamina: 6/9.
+(2026-10-26 22:44:58) [DICE] Player 3 rolled 6.
+(2026-10-26 22:44:58) [POSITION] Player 3 is now at tile 26/300.
+(2026-10-26 22:44:58) [MOVEMENT] Player 3 moved from tile 20 to tile 26.
+(2026-10-26 22:44:58) [POSITION] Player 1 is at tile 14/300.
+(2026-10-26 22:44:58) [STAMINA] Player 2 recovered Stamina: 9/9.
+(2026-10-26 22:44:58) [STAMINA] Player 3 recovered Stamina: 8/9.
+(2026-10-26 22:44:58) [STAMINA] Player 1 recovered Stamina: 9/9.
