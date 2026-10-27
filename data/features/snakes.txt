@@ -1,11 +1,11 @@
-[IRL]
+[REALISTIC]
 Python
 Sidewinder
 King Cobra
 Black Mamba
 Cobra
 
-[GENERATION 2]
+[FICTIONAL]
 
 
 [GENERATION 3]
