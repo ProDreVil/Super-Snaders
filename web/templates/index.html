@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/root.css">
+    <link rel="stylesheet" href="../static/css/utilities.css">
+    <link rel="stylesheet" href="../static/css/panels.css">
     <title>Super Snaders</title>
 </head>
-<body>
+<body class="pattern-stripes">
     <header class="header"></header>
 
-    <section class="stats-container side-container-panel">
+    <section class="stats-container side-container-panel pattern-border">
         <div class="stats-area" id="primary-stats">
-            <div class="stat">
-                <img>
+            <div class="stats flex-row flex-centered">
+                <img class="stat-icon icon" src="../../assets/images/icons/stats/health.png">
+                <div class="stat-bar"></div>
+                <div class="stat-value">100/100</div>
+            </div>
+            <div class="stats flex-row flex-centered">
+                <img class="stat-icon icon" src="../../assets/images/icons/stats/mana.png">
                 <div class="stat-bar"></div>
                 <div class="stat-value">100/100</div>
             </div>

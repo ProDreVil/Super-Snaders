@@ -4,4 +4,34 @@
     /* FONT */
     --font-primary: 'Baloo 2', sans-serif;
     --font-secondary: 'Nunito', sans-serif;
+    /* BACKGROUND */
+    --panel-bg: rgba(60, 60, 60, 0.6);
+    --panel-border: gray;
+    /* STRIPE */
+    --pattern-stripe-light: gray;
+    --pattern-stripe-dark: darkgray;
+    --pattern-stripe-size: 1rem;
+    --pattern-stripe-angle: 135deg;
+    /* PATTERN GRADIENT */
+    --pattern-shade-angle: 45deg;
+    --pattern-shade-strong: rgba(0, 0, 0, 0.6);
+    --pattern-shade-soft: rgba(0, 0, 0, 0.3);
+    --pattern-shade-center: transparent;
+    --pattern-shade-gradient: linear-gradient(
+        var(--pattern-shade-angle),
+        var(--pattern-shade-strong) 0%,
+        var(--pattern-shade-soft) 30%,
+        var(--pattern-shade-center) 50%,
+        var(--pattern-shade-soft) 70%,
+        var(--pattern-shade-strong) 100%
+    );
+    /* BORDER SHADE */
+    --pattern-border-shade-gradient: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.15) 30%,
+        transparent 50%,
+        rgba(0, 0, 0, 0.15) 70%,
+        rgba(0, 0, 0, 0.3) 100%
+    );
 }

@@ -3,15 +3,35 @@
 }
 
 html {
-    background-color: #666666;
+    min-height: 100%;
 }
 
 body {
     margin: 0;
     font-family: var(--font-secondary);
     font-size: 16px;
+    color: white;
 }
 
+body.pattern-stripes {
+    background-size: auto;
+}
+
+body.pattern-stripes {
+    background-image:
+        var(--pattern-shade-gradient),
+        repeating-linear-gradient(
+            var(--pattern-stripe-angle),
+            var(--pattern-stripe-light) 0,
+            var(--pattern-stripe-light) 2rem,
+            var(--pattern-stripe-dark) 2rem,
+            var(--pattern-stripe-dark) 4rem
+        );
+}
 h1, h2, h3, button {
     font-family: var(--font-primary);
+}
+
+.icon {
+    width: 2rem;
 }

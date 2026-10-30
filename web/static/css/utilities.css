@@ -1,0 +1,187 @@
+/* =========================
+        FLEXBOX
+========================= */
+
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-centered {
+    display: flex;
+    align-items: center;
+}
+
+/* =========================
+        ALIGNMENT
+========================= */
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+/* =========================
+        SIZING
+========================= */
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.h-fit {
+    height: fit-content;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-auto {
+    flex: auto;
+}
+
+.flex-none {
+    flex: none;
+}
+
+/* =========================
+        POSITIONING
+========================= */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/* =========================
+        DISPLAY
+========================= */
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* =========================
+        PATTERN BORDER
+========================= */
+
+.pattern-stripes {
+    background-image:
+        var(--pattern-shade-gradient),
+        repeating-linear-gradient(
+            var(--pattern-stripe-angle),
+            var(--pattern-stripe-light) 0,
+            var(--pattern-stripe-light) var(--pattern-stripe-size),
+            var(--pattern-stripe-dark) var(--pattern-stripe-size),
+            var(--pattern-stripe-dark) calc(var(--pattern-stripe-size) * 2)
+        );
+}
+
+.pattern-border {
+    position: relative;
+    isolation: isolate;
+    border-radius: var(--pattern-border-radius, 0);
+}
+
+.pattern-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: var(--pattern-border-size, 0px);
+    border-radius: inherit;
+    background:
+        var(--pattern-border-shade-gradient),
+        repeating-linear-gradient(
+            var(--pattern-stripe-angle),
+            var(--pattern-stripe-light) 0,
+            var(--pattern-stripe-light) var(--pattern-stripe-size),
+            var(--pattern-stripe-dark) var(--pattern-stripe-size),
+            var(--pattern-stripe-dark) calc(var(--pattern-stripe-size) * 2)
+        );
+    pointer-events: none;
+    z-index: -1;
+        mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+}
