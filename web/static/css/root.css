@@ -7,6 +7,9 @@
     /* BACKGROUND */
     --panel-bg: rgba(60, 60, 60, 0.6);
     --panel-border: gray;
+    /* COLORS */
+    --primary-color: #00bb00;
+    --secondary-color: #dddd00;
     /* STRIPE */
     --pattern-stripe-light: gray;
     --pattern-stripe-dark: darkgray;

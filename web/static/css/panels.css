@@ -1,6 +1,6 @@
 .side-container-panel {
     --pattern-border-size: 0.4rem;
-    --pattern-border-radius: 1rem;
+    --pattern-border-radius: 0.4rem;
     background-color: var(--panel-bg);
     border-radius: var(--pattern-border-radius);
     padding: 0.5rem;
