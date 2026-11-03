@@ -1,0 +1,5 @@
+[WEATHERS]
+
+
+[DISASTERS]
+The Floor is Lava "The lava spawns on the 1st row and rises every round. When hit, it deals 10% Max Health and forces you to move upwards. Destroys snakes and ladders on contact."
