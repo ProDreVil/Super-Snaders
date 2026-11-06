@@ -9,15 +9,14 @@ html {
 body {
     margin: 0;
     font-family: var(--font-secondary);
-    font-size: 16px;
+    font-size: 15px;
     color: white;
+    user-select: none;
+    background: black;
 }
 
 body.pattern-stripes {
     background-size: auto;
-}
-
-body.pattern-stripes {
     background-image:
         var(--pattern-shade-gradient),
         repeating-linear-gradient(
@@ -28,10 +27,11 @@ body.pattern-stripes {
             var(--pattern-stripe-dark) 4rem
         );
 }
+
 h1, h2, h3, button {
     font-family: var(--font-primary);
 }
 
-.icon {
-    width: 2rem;
+p {
+    margin: 0.3rem;
 }
