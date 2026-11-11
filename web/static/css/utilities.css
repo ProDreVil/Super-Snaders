@@ -93,6 +93,14 @@
     height: fit-content;
 }
 
+.w-auto {
+    width: auto;
+}
+
+.h-auto {
+    height: auto;
+}
+
 .flex-1 {
     flex: 1;
 }

@@ -12,31 +12,41 @@
 <!-- class="pattern-stripes" -->
 <body>
     <header class="header"></header>
-    <aside class="stats-container container-panel pattern-border">
-        <div class="stats-area" id="primary-stats">
-            <div class="stats flex-row flex-centered">
-                <div class="stat-icon">💚</div>
-                <div class="stat-bar"></div>
-                <p class="stat-value">100/100</p>
-            </div>
-            <div class="stats flex-row flex-centered">
-                <div class="stat-icon">💧</div>
-                <div class="stat-bar"></div>
-                <p class="stat-value">100/100</p>
-            </div>
+
+    <main class="game-layout">
+
+        <div class="left-panel flex-col">
+            <aside class="stats-container container-panel pattern-border">
+                <div class="stats-area" id="primary-stats">
+                    <div class="stats flex-row flex-centered">
+                        <div class="stat-icon">💚</div>
+                        <div class="stat-bar"></div>
+                        <p class="stat-value">100/100</p>
+                    </div>
+                    <div class="stats flex-row flex-centered">
+                        <div class="stat-icon">💧</div>
+                        <div class="stat-bar"></div>
+                        <p class="stat-value">100/100</p>
+                    </div>
+                </div>
+                <div class="status-area">
+                    <div class="status-icon"></div>
+                </div>
+            </aside>
+            <aside class="inventory-container container-panel pattern-border">
+            </aside>
         </div>
-    </aside>
 
-    <aside class="inventory-container container-panel pattern-border">
-    </aside>
+        <section class="board-container container-panel pattern-border w-auto">
+        </section>
 
-    <section class="board-container container-panel pattern-border">
-    </section>
-
-    <aside class="messages-container container-panel pattern-border">
-    </aside>
-
-    <aside class="shop-container container-panel pattern-border">
-    </aside>
+        <div class="right-panel flex-col">
+            <aside class="messages-container container-panel pattern-border">
+            </aside>
+            <aside class="shop-container container-panel pattern-border">
+            </aside>
+        </div>
+        
+    </main>
 </body>
 </html>
