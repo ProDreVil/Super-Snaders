@@ -5,6 +5,7 @@
     gap: 0.5rem;
     min-height: calc(100vh - 1rem);
 }
+
 .left-panel, .right-panel {
     display: flex;
     flex-direction: column;
