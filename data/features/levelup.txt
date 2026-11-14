@@ -1,0 +1,11 @@
+[FRAGMENTS]
+Boost Fragments
+Quirk Fragments
+Card Fragments
+Die Fragment
+
+[SLOTS]
+Die Slot
+Card Slot
+Quirk Slot
+Item Slot
