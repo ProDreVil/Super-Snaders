@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/root.css">
-    <link rel="stylesheet" href="../static/css/utilities.css">
-    <link rel="stylesheet" href="../static/css/panels.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/root.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/utilities.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/panels.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/status.css') }}">
     <title>Super Snaders</title>
 </head>
 <!-- class="pattern-stripes" -->
@@ -16,23 +17,7 @@
     <main class="game-layout">
 
         <div class="left-panel flex-col">
-            <aside class="stats-container container-panel pattern-border">
-                <div class="stats-area" id="primary-stats">
-                    <div class="stats flex-row flex-centered">
-                        <div class="stat-icon">💚</div>
-                        <div class="stat-bar"></div>
-                        <p class="stat-value">100/100</p>
-                    </div>
-                    <div class="stats flex-row flex-centered">
-                        <div class="stat-icon">💧</div>
-                        <div class="stat-bar"></div>
-                        <p class="stat-value">100/100</p>
-                    </div>
-                </div>
-                <div class="status-area">
-                    <div class="status-icon"></div>
-                </div>
-            </aside>
+            {% include "components/status.html" %}
             <aside class="inventory-container container-panel pattern-border">
             </aside>
         </div>

@@ -10,6 +10,9 @@
     /* COLORS */
     --primary-color: #00bb00;
     --secondary-color: #dddd00;
+    --health-color: #42c96b;
+    --mana-color: #4999e8;
+    --exp-color: #dbb315;
     /* STRIPE */
     --pattern-stripe-light: gray;
     --pattern-stripe-dark: darkgray;

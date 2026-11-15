@@ -10,6 +10,7 @@
                 └── 📁ladders
                 └── 📁snakes
                 └── 📁tiles
+            └── 📁build
             └── 📁icons
                 └── 📁effects
                 └── 📁stats
@@ -20,9 +21,10 @@
                 └── 📁modifiers
             └── 📁placeholders
                 └── 📁secrets
+                ├── dottedcheckered.webp
                 ├── luna.png
             └── 📁selections
-                └── 📁boosters
+                └── 📁boosts
                 └── 📁quirks
                 └── 📁rules
             └── 📁sprites
@@ -30,11 +32,16 @@
         └── 📁features
             ├── boosts.txt
             ├── cards.txt
+            ├── cats.txt
             ├── dice.txt
             ├── effects.txt
+            ├── events.txt
             ├── ladders.txt
+            ├── levelup.txt
+            ├── presets.txt
             ├── quirks.txt
             ├── rules.txt
+            ├── sacrifices.txt
             ├── shop.txt
             ├── snakes.txt
             ├── stats.txt
@@ -77,6 +84,8 @@
                 ├── movement_cards.py
                 ├── offense_cards.py
                 ├── utility_cards.py
+            └── 📁cats
+                ├── cats.py
             └── 📁dice
                 └── 📁__pycache__
                     ├── common_dice.cpython-314.pyc
@@ -92,11 +101,22 @@
                 ├── effects.py
                 ├── negative_effects.py
                 ├── positive_effects.py
+            └── 📁embodiments
+            └── 📁events
+                ├── disaster_events.py
+                ├── events.py
+                ├── weather_events.py
             └── 📁ladders
                 ├── gen1_ladders.py
                 ├── gen2_ladders.py
                 ├── gen3_ladders.py
                 ├── ladders.py
+            └── 📁levelup
+                ├── fragments.py
+                ├── levelup.py
+                ├── slots.py
+            └── 📁presets
+                ├── presets.py
             └── 📁quirks
                 ├── field_quirks.py
                 ├── gamble_quirks.py
@@ -111,14 +131,16 @@
                 ├── players_rules.py
                 ├── rules.py
                 ├── selection_rules.py
+            └── 📁sacrifices
+                ├── sacrifices.py
             └── 📁shop
                 ├── items.py
                 ├── modifiers.py
                 ├── shop.py
             └── 📁snakes
-                ├── gen1_snakes.py
-                ├── gen2_snakes.py
+                ├── fictional_snakes.py
                 ├── gen3_snakes.py
+                ├── realistic_snakes.py
                 ├── snakes.py
             └── 📁stats
                 └── 📁__pycache__
@@ -146,24 +168,27 @@
     └── 📁web
         └── 📁static
             └── 📁css
-                ├── components.css
                 ├── game.css
                 ├── panels.css
                 ├── root.css
+                ├── status.css
                 ├── style.css
                 ├── tooltips.css
+                ├── utilities.css
             └── 📁js
                 ├── animations.js
                 ├── game.js
                 ├── overlays.js
         └── 📁templates
             └── 📁components
+                ├── actions.html
+                ├── board.html
                 ├── header.html
                 ├── inventory.html
                 ├── messages.html
-                ├── profile.html
                 ├── shop.html
-            └── 📁panels
+                ├── status.html
+            └── 📁screens
                 ├── leaderboards.html
                 ├── menu.html
                 ├── selection.html

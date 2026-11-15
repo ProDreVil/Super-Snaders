@@ -1,0 +1,44 @@
+.stats-area {
+    gap: 0.5rem;
+    margin: 0.25rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1rem minmax(0, 1fr) 4rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stat-icon {
+    aspect-ratio: 1;
+    flex-shrink: 0;
+}
+
+.stat-bar {
+    height: 0.75rem;
+    background-color: var(--panel-border);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.stat-progress {
+    border-radius: inherit;
+}
+
+.stat-progress.health {
+    background-color: var(--health-color);
+}
+
+.stat-progress.mana {
+    background-color: var(--mana-color);
+}
+
+.stat-progress.exp {
+    background-color: var(--exp-color);
+}
+
+.stat-value {
+    margin: 0;
+    white-space: nowrap;
+}
