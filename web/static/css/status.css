@@ -1,13 +1,28 @@
 .stats-area {
-    gap: 0.5rem;
-    margin: 0.25rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0.5);
 }
 
-.stats {
+.stat {
     display: grid;
-    grid-template-columns: 1rem minmax(0, 1fr) 4rem;
+    grid-template-columns: 1rem minmax(0, 1fr) 5rem;
     align-items: center;
     gap: 0.5rem;
+}
+
+.resource-stats {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 0.25rem;
+    gap: 0.25rem;
+}
+
+.quick-access-stats {
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 0.25rem;
+}
+
+.quick-access-stat {
+    gap: 0.25rem;
 }
 
 .stat-icon {
@@ -16,29 +31,37 @@
 }
 
 .stat-bar {
-    height: 0.75rem;
+    height: 0.9rem;
     background-color: var(--panel-border);
+    border: 0.15rem solid rgba(0, 0, 0, 0.9);
     border-radius: 1rem;
     overflow: hidden;
 }
 
 .stat-progress {
-    border-radius: inherit;
-}
-
-.stat-progress.health {
-    background-color: var(--health-color);
-}
-
-.stat-progress.mana {
-    background-color: var(--mana-color);
-}
-
-.stat-progress.exp {
-    background-color: var(--exp-color);
+    background-color: var(--stat-color);
+    border-radius: 1rem;
+    border: 0.15rem solid color-mix(in srgb, var(--stat-color), black 40%);
 }
 
 .stat-value {
     margin: 0;
     white-space: nowrap;
 }
+
+.stat-value.important {
+    color: var(--stat-color);
+}
+
+.important-stats {
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.important-stat {
+    gap: 0.25rem;
+}
+
+.stat.health { --stat-color: var(--health-color); }
+.stat.mana { --stat-color: var(--mana-color); }
+.stat.exp { --stat-color: var(--exp-color); }
