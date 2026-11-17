@@ -1,49 +1,88 @@
-<aside class="status-container container-panel pattern-border">
+<aside class="status-container container-panel pattern-border flex-col">
     <div class="stats-area flex-col">
-        <div class="resource-stats flex-col">
-            <div class="stat health">
-                <div class="stat-icon">💚</div>
-                <div class="stat-bar flex-1">
-                    <div class="stat-progress w-full h-full"></div>
+        <div class="head-stats">
+            <div class="resource-stats flex-col">
+                <div class="stat health">
+                    <div class="stat-icon">💚</div>
+                    <div class="stat-bar flex-1">
+                        <div class="stat-progress w-full h-full"></div>
+                    </div>
+                    <p class="stat-value important">[3] 100/100</p>
                 </div>
-                <p class="stat-value important">[3] 100/100</p>
+                <div class="stat mana">
+                    <div class="stat-icon">💧</div>
+                    <div class="stat-bar flex-1">
+                        <div class="stat-progress w-full h-full"></div>
+                    </div>
+                    <p class="stat-value important">10/100</p>
+                </div>
+                <div class="stat exp">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-bar flex-1">
+                        <div class="stat-progress w-full h-full"></div>
+                    </div>
+                    <p class="stat-value important">[1] 0/100</p>
+                </div>
             </div>
-            <div class="stat mana">
-                <div class="stat-icon">💧</div>
-                <div class="stat-bar flex-1">
-                    <div class="stat-progress w-full h-full"></div>
+            <div class="quick-access-stats flex-row flex-centered flex-nowrap">
+                <div class="quick-access-stat flex-row flex-centered">
+                    <div class="stat-icon">💵</div>
+                    <p class="stat-value">100</p>
                 </div>
-                <p class="stat-value important">10/100</p>
-            </div>
-            <div class="stat exp">
-                <div class="stat-icon">⭐</div>
-                <div class="stat-bar flex-1">
-                    <div class="stat-progress w-full h-full"></div>
+                <div class="quick-access-stat flex-row flex-centered">
+                    <div class="stat-icon">🔥</div>
+                    <p class="stat-value">50</p>
                 </div>
-                <p class="stat-value important">[1] 0/100</p>
+                <div class="quick-access-stat flex-row flex-centered">
+                    <div class="stat-icon">🎲</div>
+                    <p class="stat-value">5</p>
+                </div>
+                <div class="quick-access-stat flex-row flex-centered">
+                    <div class="stat-icon">👻</div>
+                    <p class="stat-value">10</p>
+                </div>
             </div>
         </div>
-        <div class="quick-access-stats flex-row flex-centered flex-nowrap">
-            <div class="quick-access-stat flex-row flex-centered">
-                <div class="stat-icon">💵</div>
-                <p class="stat-value">100</p>
+        <div class="unlocked-stats">
+            <div class="unlocked-stat flex-centered">
+                <div class="stat-icon">🛡️</div>
+                <p class="stat-value">10</p>
             </div>
-            <div class="quick-access-stat flex-row flex-centered">
-                <div class="stat-icon">🔥</div>
-                <p class="stat-value">50</p>
-            </div>
-            <div class="quick-access-stat flex-row flex-centered">
-                <div class="stat-icon">🎲</div>
+            <div class="unlocked-stat flex-centered">
+                <div class="stat-icon">🍀</div>
                 <p class="stat-value">5</p>
             </div>
-            <div class="quick-access-stat flex-row flex-centered">
-                <div class="stat-icon">👻</div>
-                <p class="stat-value">10</p>
+            <div class="unlocked-stat flex-centered">
+                <div class="stat-icon">⚡</div>
+                <p class="stat-value">20</p>
+            </div>
+            <div class="unlocked-stat flex-centered">
+                <div class="stat-icon">🪙</div>
+                <p class="stat-value">3</p>
+            </div>
+            <div class="unlocked-stat flex-centered">
+                <div class="stat-icon">🎯</div>
+                <p class="stat-value">8</p>
+            </div>
+            <div class="unlocked-stat flex-centered">
+                <div class="stat-icon">🌟</div>
+                <p class="stat-value">12</p>
             </div>
         </div>
     </div>
 
     <div class="effects-area flex-row">
-        <div class="effect-icon"></div>
+        <div class="effect relative flex-centered">
+            <div class="effect-icon">🔥</div>
+            <span class="effect-duration absolute flex-centered justify-center">3</span>
+        </div>
+        <div class="effect relative flex-centered">
+            <div class="effect-icon">⚡</div>
+            <span class="effect-duration absolute flex-centered justify-center">2</span>
+        </div>
+        <div class="effect relative flex-centered">
+            <div class="effect-icon">🛡️</div>
+            <span class="effect-duration absolute flex-centered justify-center">5</span>
+        </div>
     </div>
 </aside>
