@@ -7,6 +7,13 @@
     /* BACKGROUND */
     --panel-bg: rgba(60, 60, 60, 0.6);
     --panel-border: gray;
+    --black-20: rgba(0, 0, 0, 0.2);
+    --black-15: rgba(0, 0, 0, 0.15);
+    --black-30: rgba(0, 0, 0, 0.3);
+    --black-50: rgba(0, 0, 0, 0.5);
+    --black-90: rgba(0, 0, 0, 0.9);
+    --white-4: rgba(255, 255, 255, 0.04);
+    --white-8: rgba(255, 255, 255, 0.08);
     /* COLORS */
     --primary-color: #00bb00;
     --secondary-color: #dddd00;

@@ -1,18 +1,26 @@
-<aside class="messages-container container-panel pattern-border">
-    <div class="messages-area flex-col">
-        <div class="message system-message">
-            <p class="message-content">Game started!</p>
+<aside class="messages-container container-panel pattern-border flex-col">
+    <div class="profile-area flex-centered justify-between">
+        <p class="player-name">Player 1 </p>
+        <p class="kda">1/0/2</p>
+    </div>
+    <div class="chat-area flex-col">
+        <div class="chat system-chat">
+            <p class="chat-content">Game started!</p>
         </div>
-        <div class="message player-message">
-            <span class="message-sender">Player 1</span>
-            <p class="message-content">Good luck everyone!</p>
+        <div class="chat player-chat">
+            <span class="chat-sender">Player 1</span>
+            <p class="chat-content">Good luck everyone!</p>
         </div>
-        <div class="message system-message">
-            <p class="message-content">Player 2 rolled a 6.</p>
+        <div class="chat system-chat">
+            <p class="chat-content">Player 2 rolled a 6.</p>
         </div>
-        <div class="message player-message">
-            <span class="message-sender">Player 2</span>
-            <p class="message-content">Let's go!</p>
+        <div class="chat player-chat">
+            <span class="chat-sender">Player 2</span>
+            <p class="chat-content">Let's go!</p>
         </div>
+    </div>
+    <div class="chat-input-area flex-row">
+        <input type="text" class="chat-input" placeholder="Type a message...">
+        <button class="chat-send">SEND</button>
     </div>
 </aside>
