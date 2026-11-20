@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/utilities.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/panels.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/status.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/messages.css') }}">
     <title>Super Snaders</title>
 </head>
 <!-- class="pattern-stripes" -->
@@ -26,8 +27,7 @@
         </section>
 
         <div class="right-panel flex-col">
-            <aside class="messages-container container-panel pattern-border">
-            </aside>
+            {% include "components/messages.html" %}
             <aside class="shop-container container-panel pattern-border">
             </aside>
         </div>
