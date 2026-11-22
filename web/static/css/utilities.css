@@ -161,16 +161,18 @@
         PATTERN BORDER
 ========================= */
 
-.pattern-stripes {
+.pattern-checkers {
     background-image:
         var(--pattern-shade-gradient),
-        repeating-linear-gradient(
-            var(--pattern-stripe-angle),
-            var(--pattern-stripe-light) 0,
-            var(--pattern-stripe-light) var(--pattern-stripe-size),
-            var(--pattern-stripe-dark) var(--pattern-stripe-size),
-            var(--pattern-stripe-dark) calc(var(--pattern-stripe-size) * 2)
+        conic-gradient(
+            var(--pattern-checker-light) 25%,
+            var(--pattern-checker-dark) 0 50%,
+            var(--pattern-checker-light) 0 75%,
+            var(--pattern-checker-dark) 0
         );
+    background-size:
+        auto,
+        var(--pattern-checker-size) var(--pattern-checker-size);
 }
 
 .pattern-border {

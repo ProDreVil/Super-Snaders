@@ -14,6 +14,7 @@
     --black-90: rgba(0, 0, 0, 0.9);
     --white-4: rgba(255, 255, 255, 0.04);
     --white-8: rgba(255, 255, 255, 0.08);
+    --white-60: rgba(255, 255, 255, 0.6);
     /* COLORS */
     --primary-color: #00bb00;
     --secondary-color: #dddd00;
@@ -30,14 +31,17 @@
     --pattern-shade-strong: rgba(0, 0, 0, 0.6);
     --pattern-shade-soft: rgba(0, 0, 0, 0.3);
     --pattern-shade-center: transparent;
-    --pattern-shade-gradient: linear-gradient(
-        var(--pattern-shade-angle),
-        var(--pattern-shade-strong) 0%,
-        var(--pattern-shade-soft) 30%,
-        var(--pattern-shade-center) 50%,
-        var(--pattern-shade-soft) 70%,
+    --pattern-shade-gradient: radial-gradient(
+        ellipse at center,
+        var(--pattern-shade-center) 20%,
+        var(--pattern-shade-soft) 65%,
         var(--pattern-shade-strong) 100%
     );
+    /* CHECKERBOARD */
+    --player-color: black;
+    --pattern-checker-light: color-mix(in srgb, var(--player-color), white 15%);
+    --pattern-checker-dark: color-mix(in srgb, var(--player-color), black 15%);
+    --pattern-checker-size: 4rem;
     /* BORDER SHADE */
     --pattern-border-shade-gradient: linear-gradient(
         45deg,
