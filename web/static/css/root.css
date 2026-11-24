@@ -43,12 +43,10 @@
     --pattern-checker-dark: color-mix(in srgb, var(--player-color), black 15%);
     --pattern-checker-size: 4rem;
     /* BORDER SHADE */
-    --pattern-border-shade-gradient: linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.15) 30%,
-        transparent 50%,
-        rgba(0, 0, 0, 0.15) 70%,
+    --pattern-border-shade-gradient: radial-gradient(
+        ellipse at center,
+        transparent 20%,
+        rgba(0, 0, 0, 0.15) 65%,
         rgba(0, 0, 0, 0.3) 100%
     );
 }

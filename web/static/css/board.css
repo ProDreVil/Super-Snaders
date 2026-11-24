@@ -1,0 +1,74 @@
+.board-container {
+    min-height: 0;
+    overflow: hidden;
+    flex: 1;
+}
+
+.board-scroll {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.board-scroll::before,
+.board-scroll::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 2;
+}
+
+.board-scroll::before {
+    top: 0;
+    background: linear-gradient(
+        to top,
+        transparent,
+        rgba(0, 0, 0, 0.45)
+    );
+}
+
+.board-scroll::after {
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(0, 0, 0, 0.45)
+    );
+}
+
+.board-scroll.show-top-shadow::before,
+.board-scroll.show-bottom-shadow::after {
+    opacity: 1;
+}
+
+.board-grid {
+    flex-direction: column-reverse;
+    gap: 0.2rem;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.board-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.board-row {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    gap: 0.2rem;
+}
+
+.board-tile {
+    aspect-ratio: 1;
+    border: 1px solid var(--panel-border);
+}

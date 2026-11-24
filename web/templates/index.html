@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/panels.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/status.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/messages.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/board.css') }}">
     <title>Super Snaders</title>
 </head>
 <body class="pattern-checkers">
@@ -22,8 +23,7 @@
             </aside>
         </div>
 
-        <section class="board-container container-panel pattern-border w-auto">
-        </section>
+        {% include "components/board.html" %}
 
         <div class="right-panel flex-col">
             {% include "components/messages.html" %}
@@ -32,5 +32,7 @@
         </div>
         
     </main>
+    
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
 </body>
 </html>

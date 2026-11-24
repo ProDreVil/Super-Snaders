@@ -1,0 +1,14 @@
+<section class="board-container container-panel pattern-border w-auto flex-col">
+    <div class="board-scroll">
+        <div class="board-grid flex h-full">
+            {% for row in range(10) %}
+                <div class="board-row">
+                    {% for col in range(10) %}
+                        {% set tile = row * 10 + (9 - col if row % 2 else col) + 1 %}
+                        <div class="board-tile flex-centered justify-center">{{ tile }}</div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
