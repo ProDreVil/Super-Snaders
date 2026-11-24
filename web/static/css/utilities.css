@@ -207,3 +207,20 @@
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
 }
+
+/* =========================
+        KEYFRAMES
+========================= */
+
+@keyframes checker-drift {
+    from {
+        background-position: 0 0, 0 0;
+    }
+    to {
+        background-position: 0 0, var(--drift-x) var(--drift-y);
+    }
+}
+
+.background-drift {
+    animation: checker-drift 30s linear infinite;
+}
