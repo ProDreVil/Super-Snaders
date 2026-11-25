@@ -5,7 +5,7 @@
                 <div class="board-row">
                     {% for col in range(10) %}
                         {% set tile = row * 10 + (9 - col if row % 2 else col) + 1 %}
-                        <div class="board-tile flex-centered justify-center">{{ tile }}</div>
+                        <div class="board-tile flex-end relative">{{ tile }}</div>
                     {% endfor %}
                 </div>
             {% endfor %}

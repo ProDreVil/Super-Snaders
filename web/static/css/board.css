@@ -2,6 +2,7 @@
     min-height: 0;
     overflow: hidden;
     flex: 1;
+    user-select: none;
 }
 
 .board-scroll {
@@ -71,4 +72,5 @@
 .board-tile {
     aspect-ratio: 1;
     border: 1px solid var(--panel-border);
+    padding: 0 0.25rem 0 0;
 }
