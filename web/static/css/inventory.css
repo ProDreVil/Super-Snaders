@@ -1,0 +1,64 @@
+.inventory-container {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.inventory-scroll {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    gap: 0.5rem;
+    scrollbar-width: none;
+}
+
+.inventory-scroll hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--panel-border);
+    opacity: 0.6;
+}
+
+.inventory-category {
+    gap: 0.35rem;
+    margin: 0.25rem;
+}
+
+.inventory-label {
+    margin: 0;
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+.boosts-label {
+    color: #e6c45c;
+}
+
+.quirks-label {
+    color: #b49ae8;
+}
+
+.items-label {
+    color: #69bde0;
+}
+
+.sacrifices-label {
+    color: #e17c7c;
+}
+
+.inventory-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.inventory-slot {
+    width: 2.75rem;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--panel-border);
+    border-radius: 0.35rem;
+}

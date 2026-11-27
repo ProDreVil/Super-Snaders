@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/status.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/messages.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/board.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inventory.css') }}">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/icons/sniffy.png">
     <title>Super Snaders</title>
 </head>
 <body class="pattern-checkers">
@@ -19,7 +21,7 @@
 
         <div class="left-panel flex-col">
             {% include "components/status.html" %}
-            <aside class="inventory-container container-panel pattern-border">
+            {% include "components/inventory.html" %}
             </aside>
         </div>
 
