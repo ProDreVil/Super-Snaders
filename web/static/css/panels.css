@@ -26,3 +26,11 @@
     padding: 0.5rem;
     min-width: 0;
 }
+
+.container-panel {
+    transition: background-color 0.2s ease;
+}
+
+.container-panel:hover {
+    background-color: var(--panel-focus);
+}
